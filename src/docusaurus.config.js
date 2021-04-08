@@ -1,33 +1,45 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
+  title: 'twentyonepilots.wiki',
   tagline: 'The tagline of my site',
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://twentyonepilots.wiki',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'DiscordClique', // Usually your GitHub org/user name.
+  projectName: 'twentyonepilots.wiki', // Usually your repo name.
   themeConfig: {
+    hideableSidebar: true,
+    colorMode: {
+      // "light" | "dark"
+      defaultMode: 'dark',
+      respectPrefersColorScheme: true,
+    },
     navbar: {
-      title: 'My Site',
+      title: 'twentyonepilots.wiki',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
       },
       items: [
         {
-          to: 'docs/',
+          to: 'docs/dmaorg',
           activeBasePath: 'docs',
-          label: 'Docs',
+          label: 'dmaorg',
           position: 'left',
         },
-        {to: 'blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
+          to: 'docs/levelofconcern',
+          activeBasePath: 'docs',
+          label: 'Level of Concern',
+          position: 'left',
+        },
+        {
+          to: 'docs/scaledandicy',
+          activeBasePath: 'docs',
+          label: 'Scaled and Icy',
+          position: 'left',
         },
       ],
     },
@@ -39,42 +51,54 @@ module.exports = {
           items: [
             {
               label: 'Dmaorg',
-              to: 'docs/',
+              to: 'docs/dmaorg',
+            },
+            {
+              label: 'Level of Concern',
+              to: 'docs/levelfconcern',
+            },
+            {
+              label: 'Scaled and Icy',
+              to: 'docs/scaledandicy',
             },
           ],
         },
         {
-          title: 'Community',
+          title: 'Discord Clique',
           items: [
             {
-              label: 'Stack Overflow',
-              href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+              label: 'Join Discord Clique',
+              href: 'https://discord.gg/twentyonepilots',
             },
             {
-              label: 'Discord',
-              href: 'https://discordapp.com/invite/docusaurus',
+              label: 'Discord Clique Website',
+              href: 'https://www.discordclique.com',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
-            },
+              label: 'Discord Clique on Twitter',
+              href: 'http://twitter.com/discordClique/',
+            }
           ],
         },
         {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: 'blog',
+              label: 'Contribute to twentyonepilots.wiki',
+              href: 'https://github.com/x2110311x/twentyonepilotswiki',
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              label: 'Twenty One Pilots Website',
+              href: 'https://www.twentyonepilots.com',
+            },
+            {
+              label: 'dmaorg Archive',
+              href: '#tba',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: 'DISCLAIMER: We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Twenty One Pilots, or any of its subsidiaries or its affiliates. <br>The official Twenty One Pilots website can be found at https://www.twentyonepilots.com/',
     },
   },
   presets: [
@@ -85,13 +109,7 @@ module.exports = {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
           editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
-        },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+            'https://github.com/x2110311x/twentyonepilotswiki/edit/main/src/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
