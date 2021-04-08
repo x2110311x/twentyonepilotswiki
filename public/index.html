@@ -1,89 +1,26 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
-
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/8.3.2/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/8.3.2/firebase-auth.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-database.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-firestore.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-functions.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-storage.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-analytics.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-remote-config.js"></script>
-    <script defer src="/__/firebase/8.3.2/firebase-performance.js"></script>
-    <!-- 
-      initialize the SDK after all desired features are loaded, set useEmulator to false
-      to avoid connecting the SDK to running emulators.
-    -->
-    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
-
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
-
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const loadEl = document.querySelector('#load');
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.firestore().doc('/foo/bar').get().then(() => { });
-        // firebase.functions().httpsCallable('yourFunction')().then(() => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        // firebase.analytics(); // call to activate
-        // firebase.analytics().logEvent('tutorial_completed');
-        // firebase.performance(); // call to activate
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-
-        try {
-          let app = firebase.app();
-          let features = [
-            'auth', 
-            'database', 
-            'firestore',
-            'functions',
-            'messaging', 
-            'storage', 
-            'analytics', 
-            'remoteConfig',
-            'performance',
-          ].filter(feature => typeof app[feature] === 'function');
-          loadEl.textContent = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          loadEl.textContent = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="Docusaurus v2.0.0-alpha.72">
+<link rel="alternate" type="application/rss+xml" href="/blog/rss.xml" title="twentyonepilots.wiki Blog RSS Feed">
+<link rel="alternate" type="application/atom+xml" href="/blog/atom.xml" title="twentyonepilots.wiki Blog Atom Feed"><title data-react-helmet="true">Hello from twentyonepilots.wiki | twentyonepilots.wiki</title><meta data-react-helmet="true" property="og:title" content="Hello from twentyonepilots.wiki | twentyonepilots.wiki"><meta data-react-helmet="true" name="description" content="Description will go into a meta tag in &lt;head /&gt;"><meta data-react-helmet="true" property="og:description" content="Description will go into a meta tag in &lt;head /&gt;"><meta data-react-helmet="true" property="og:url" content="https://twentyonepilots.wiki/"><meta data-react-helmet="true" name="docusaurus_locale" content="en"><meta data-react-helmet="true" name="docusaurus_tag" content="default"><link data-react-helmet="true" rel="shortcut icon" href="/img/favicon.ico"><link data-react-helmet="true" rel="canonical" href="https://twentyonepilots.wiki/"><link data-react-helmet="true" rel="alternate" href="https://twentyonepilots.wiki/" hreflang="en"><link data-react-helmet="true" rel="alternate" href="https://twentyonepilots.wiki/" hreflang="x-default"><script data-react-helmet="true">function maybeInsertBanner(){window.__DOCUSAURUS_INSERT_BASEURL_BANNER&&insertBanner()}function insertBanner(){var n=document.getElementById("docusaurus-base-url-issue-banner-container");if(n){n.innerHTML='\n<div id="docusaurus-base-url-issue-banner" style="border: thick solid red; background-color: rgb(255, 230, 179); margin: 20px; padding: 20px; font-size: 20px;">\n   <p style="font-weight: bold; font-size: 30px;">Your Docusaurus site did not load properly.</p>\n   <p>A very common reason is a wrong site <a href="https://v2.docusaurus.io/docs/docusaurus.config.js/#baseurl" style="font-weight: bold;">baseUrl configuration</a>.</p>\n   <p>Current configured baseUrl = <span style="font-weight: bold; color: red;">/</span>  (default value)</p>\n   <p>We suggest trying baseUrl = <span id="docusaurus-base-url-issue-banner-suggestion-container" style="font-weight: bold; color: green;"></span></p>\n</div>\n';var e=document.getElementById("docusaurus-base-url-issue-banner-suggestion-container"),s=window.location.pathname,r="/"===s.substr(-1)?s:s+"/";e.innerHTML=r}}window.__DOCUSAURUS_INSERT_BASEURL_BANNER=!0,document.addEventListener("DOMContentLoaded",maybeInsertBanner)</script><link rel="stylesheet" href="/assets/css/styles.3e87d21b.css">
+<link rel="preload" href="/assets/js/styles.ef1eba97.js" as="script">
+<link rel="preload" href="/assets/js/runtime~main.145bb5dd.js" as="script">
+<link rel="preload" href="/assets/js/main.05956d98.js" as="script">
+<link rel="preload" href="/assets/js/1.e441c616.js" as="script">
+<link rel="preload" href="/assets/js/2.230a1eb4.js" as="script">
+<link rel="preload" href="/assets/js/c4f5d8e4.e84eaae7.js" as="script">
+</head>
+<body>
+<script>!function(){function e(e){document.documentElement.setAttribute("data-theme",e)}var t=function(){var e=null;try{e=localStorage.getItem("theme")}catch(e){}return e}();null!==t?e(t):window.matchMedia("(prefers-color-scheme: dark)").matches?e("dark"):window.matchMedia("(prefers-color-scheme: light)").matches?e("light"):e("dark")}()</script><div id="__docusaurus">
+<div id="docusaurus-base-url-issue-banner-container"></div><div><a href="#main" class="skipToContent_1oUP">Skip to main content</a></div><nav class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Navigation bar toggle" class="navbar__toggle" type="button" tabindex="0"><svg aria-label="Menu" width="30" height="30" viewBox="0 0 30 30" role="img" focusable="false"><title>Menu</title><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><img src="/img/dragon.png" alt="My Site Logo" class="themedImage_1VuW themedImage--light_3UqQ navbar__logo"><img src="/img/dragon.png" alt="My Site Logo" class="themedImage_1VuW themedImage--dark_hz6m navbar__logo"><strong class="navbar__title">twentyonepilots.wiki</strong></a><a class="navbar__item navbar__link" href="/docs/dmaorg">dmaorg</a><a class="navbar__item navbar__link" href="/docs/levelofconcern">Level of Concern</a><a class="navbar__item navbar__link" href="/docs/scaledandicy">Scaled and Icy</a></div><div class="navbar__items navbar__items--right"><div class="react-toggle react-toggle--checked react-toggle--disabled displayOnlyInLargeViewport_GrZ2"><div class="react-toggle-track"><div class="react-toggle-track-check"><span class="toggle_71bT">🌜</span></div><div class="react-toggle-track-x"><span class="toggle_71bT">🌞</span></div></div><div class="react-toggle-thumb"></div><input type="checkbox" disabled="" aria-label="Dark mode toggle" checked="" class="react-toggle-screenreader-only"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div><div class="navbar-sidebar"><div class="navbar-sidebar__brand"><a class="navbar__brand" href="/"><img src="/img/dragon.png" alt="My Site Logo" class="themedImage_1VuW themedImage--light_3UqQ navbar__logo"><img src="/img/dragon.png" alt="My Site Logo" class="themedImage_1VuW themedImage--dark_hz6m navbar__logo"><strong class="navbar__title">twentyonepilots.wiki</strong></a></div><div class="navbar-sidebar__items"><div class="menu"><ul class="menu__list"><li class="menu__list-item"><a class="menu__link" href="/docs/dmaorg">dmaorg</a></li><li class="menu__list-item"><a class="menu__link" href="/docs/levelofconcern">Level of Concern</a></li><li class="menu__list-item"><a class="menu__link" href="/docs/scaledandicy">Scaled and Icy</a></li></ul></div></div></div></nav><div class="main-wrapper"><header class="hero hero--primary heroBanner_3P7f"><div class="container"><h1 class="hero__title">twentyonepilots.wiki</h1><p class="hero__subtitle">The tagline of my site</p><div class="buttons_1r9m"><a class="button button--outline button--secondary button--lg" href="/docs/">Get Started</a></div></div></header><main><section class="features_3azU"><div class="container"><div class="row"><div class="col col--4"><div class="text--center"><img class="featureImage_ZtzX" src="/img/undraw_docusaurus_mountain.svg" alt="Easy to Use"></div><h3>Easy to Use</h3><p>Docusaurus was designed from the ground up to be easily installed and used to get your website up and running quickly.</p></div><div class="col col--4"><div class="text--center"><img class="featureImage_ZtzX" src="/img/undraw_docusaurus_tree.svg" alt="Focus on What Matters"></div><h3>Focus on What Matters</h3><p>Docusaurus lets you focus on your docs, and we&#x27;ll do the chores. Go ahead and move your docs into the <code>docs</code> directory.</p></div><div class="col col--4"><div class="text--center"><img class="featureImage_ZtzX" src="/img/undraw_docusaurus_react.svg" alt="Powered by React"></div><h3>Powered by React</h3><p>Extend or customize your website layout by reusing React. Docusaurus can be extended while reusing the same header and footer.</p></div></div></div></section></main></div><footer class="footer"><div class="container"><div class="row footer__links"><div class="col footer__col"><h4 class="footer__title">Docs</h4><ul class="footer__items"><li class="footer__item"><a class="footer__link-item" href="/docs/dmaorg">Dmaorg</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/levelofconcern">Level of Concern</a></li><li class="footer__item"><a class="footer__link-item" href="/docs/scaledandicy">Scaled and Icy</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">Discord Clique</h4><ul class="footer__items"><li class="footer__item"><a href="https://discord.gg/twentyonepilots" target="_blank" rel="noopener noreferrer" class="footer__link-item">Join Discord Clique</a></li><li class="footer__item"><a href="https://www.discordclique.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord Clique Website</a></li><li class="footer__item"><a href="http://twitter.com/discordClique/" target="_blank" rel="noopener noreferrer" class="footer__link-item">Discord Clique on Twitter</a></li></ul></div><div class="col footer__col"><h4 class="footer__title">More</h4><ul class="footer__items"><li class="footer__item"><a href="https://github.com/x2110311x/twentyonepilotswiki" target="_blank" rel="noopener noreferrer" class="footer__link-item">Contribute to twentyonepilots.wiki</a></li><li class="footer__item"><a href="https://www.twentyonepilots.com" target="_blank" rel="noopener noreferrer" class="footer__link-item">Twenty One Pilots Website</a></li><li class="footer__item"><a href="#tba" class="footer__link-item">dmaorg Archive</a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">DISCLAIMER: We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Twenty One Pilots, or any of its subsidiaries or its affiliates. <br>The official Twenty One Pilots website can be found at https://www.twentyonepilots.com/</div></div></div></footer></div>
+<script src="/assets/js/styles.ef1eba97.js"></script>
+<script src="/assets/js/runtime~main.145bb5dd.js"></script>
+<script src="/assets/js/main.05956d98.js"></script>
+<script src="/assets/js/1.e441c616.js"></script>
+<script src="/assets/js/2.230a1eb4.js"></script>
+<script src="/assets/js/c4f5d8e4.e84eaae7.js"></script>
+</body>
 </html>

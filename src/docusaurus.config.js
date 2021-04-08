@@ -20,7 +20,7 @@ module.exports = {
       title: 'twentyonepilots.wiki',
       logo: {
         alt: 'My Site Logo',
-        src: 'img/logo.svg',
+        src: 'img/dragon.png',
       },
       items: [
         {
@@ -44,7 +44,6 @@ module.exports = {
       ],
     },
     footer: {
-      style: 'dark',
       links: [
         {
           title: 'Docs',
@@ -55,7 +54,7 @@ module.exports = {
             },
             {
               label: 'Level of Concern',
-              to: 'docs/levelfconcern',
+              to: 'docs/levelofconcern',
             },
             {
               label: 'Scaled and Icy',
