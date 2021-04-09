@@ -3,54 +3,63 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
+import useThemeContext from '@theme/hooks/useThemeContext';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
+
 const features = [
   {
-    title: 'Easy to Use',
-    imageUrl: 'img/undraw_docusaurus_mountain.svg',
+    title: 'dmaorg.info',
+    link: '/docs/dmaorg',
+    imageUrlDark: 'img/dema-light.png',
+    imageUrlLight: 'img/dema.png',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        A black-and-white first glance to the Sacred Municipality of DEMA and its bishops through the eyes of Clancy and his violation code. Unveil the story of the Banditos, themed around the band’s 2018 album TRENCH.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    imageUrl: 'img/undraw_docusaurus_tree.svg',
+    title: 'Level of Concern',
+    link: '/docs/levelofconcern',
+    imageUrlDark: 'img/loc-drive.png',
+    imageUrlLight: 'img/loc-drive.png',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+       Following the success of their single "Level of Concern", a cryptic livestream takes place in the band’s YouTube channel, taking the entire fanbase to a madness-inducing scavenger hunt for codes and flash drives. Only for the savvy enough.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    imageUrl: 'img/undraw_docusaurus_react.svg',
+    title: 'Scaled and Icy',
+    link: '/docs/scaledandicy',
+    imageUrlDark: 'img/trashdragon.png',
+    imageUrlLight: 'img/trashdragon.png',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Keep up with the band’s vibrant return, unlike anything they’ve done before. Their upcoming new album comes with a mysterious Livestream Experience hosted by DMA ORG and Good Day Dema. “It all happens on May 21st.”
       </>
     ),
   },
 ];
 
-function Feature({imageUrl, title, description}) {
-  const imgUrl = useBaseUrl(imageUrl);
+function Feature({link, imageUrlDark, imageUrlLight, title, description}) {
+  const imgUrlDark = useBaseUrl(imageUrlDark);
+  const imgUrlLight = useBaseUrl(imageUrlLight);
+  const { isDarkTheme } = useThemeContext();
   return (
-    <div className={clsx('col col--4', styles.feature)}>
-      {imgUrl && (
-        <div className="text--center">
-          <img className={styles.featureImage} src={imgUrl} alt={title} />
-        </div>
-      )}
-      <h3>{title}</h3>
-      <p>{description}</p>
-    </div>
+      <div className={clsx('col col--4', styles.feature)}>
+        {imgUrlDark && (
+          <div className="text--center">
+            <a class='lore-module-link' href={link}>
+              <img className={styles.featureImage} src={isDarkTheme ? imgUrlDark : imgUrlLight} alt={title} />
+            </a>
+          </div>
+        )}
+        <h3>{title}</h3>
+        <p>{description}</p>
+      </div>
   );
 }
 
@@ -59,25 +68,26 @@ export default function Home() {
   const {siteConfig = {}} = context;
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title={`Home`}
+      description="We do the clikking for the clikkies">
       <header className={clsx('hero hero--primary', styles.heroBanner)}>
         <div className="container">
-          <h1 className="hero__title">{siteConfig.title}</h1>
-          <p className="hero__subtitle">{siteConfig.tagline}</p>
-          <div className={styles.buttons}>
-            <Link
-              className={clsx(
-                'button button--outline button--secondary button--lg',
-                styles.getStarted,
-              )}
-              to={useBaseUrl('docs/')}>
-              Get Started
-            </Link>
-          </div>
+          <h1 className={clsx("hero__title", styles.hero__title)}>{siteConfig.title}</h1>
+          <p className={clsx("hero__subtitle", styles.hero__subtitle)}>Hosted by <strong>Discord Clique</strong></p>
         </div>
       </header>
       <main>
+        <section class="intro col">
+          <div className="container">
+            <h3>Welcome! </h3>
+            <p>
+            twentyonepilots.wiki is an online, community-hosted lore repository of the band Twenty One Pilots. The Grammy-winner alternative rock duo from Columbus, Ohio is famous for weaving puzzling backgrounds for their records, and this hub was created to help the fans navigate through their cryptic works. This site is hosted and updated by the Discord Clique, a fandom community localized mainly on the group-chatting platform Discord. Make sure to join us!
+            <br></br>
+            <br></br>
+            Use the bookmarks below to navigate through the website. If you have any questions, suggestions or bug reports, make sure to contact us in our own server or through our official twitter @DiscordClique. Thank you for visiting and have fun! "We do the clicking for the clikkies."
+            </p>
+          </div>
+        </section>
         {features && features.length > 0 && (
           <section className={styles.features}>
             <div className="container">

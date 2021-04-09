@@ -6,15 +6,29 @@
  */
 
 /* You can override the default Infima variables here. */
-:root {
-  --ifm-color-primary: #de819e;
-  --ifm-color-primary-dark: #d76589;
-  --ifm-color-primary-darker: #d3577e;
-  --ifm-color-primary-darkest: #c33360;
-  --ifm-color-primary-light: #e59db3;
-  --ifm-color-primary-lighter: #e9abbe;
-  --ifm-color-primary-lightest: #f4d4de;
+:root[data-theme='dark'] {
+  --ifm-color-primary: #3f9bdc;
+  --ifm-color-primary-dark: #278ed7;
+  --ifm-color-primary-darker: #2587cb;
+  --ifm-color-primary-darkest: #1f6fa8;
+  --ifm-color-primary-light: #57a7e0;
+  --ifm-color-primary-lighter: #63aee3;
+  --ifm-color-primary-lightest: #87c0e9;
   --ifm-code-font-size: 95%;
+  --ifm-color-shadow: #000000;
+  --ifm-color-shadow-dark: #ffffff;
+}
+
+:root[data-theme='light'] {
+  --ifm-color-primary: #bf737e;
+  --ifm-color-primary-dark: #b55e6b;
+  --ifm-color-primary-darker: #b15361;
+  --ifm-color-primary-darkest: #93434f;
+  --ifm-color-primary-light: #c98891;
+  --ifm-color-primary-lighter: #cd939b;
+  --ifm-color-primary-lightest: #dcb2b8;
+  --ifm-color-shadow: #000000;
+  --ifm-color-shadow-dark: #ffffff;
 }
 
 .docusaurus-highlight-code-line {
@@ -29,4 +43,21 @@
   padding-top: 1em;
   width: 100%;
   text-align: center;
+}
+
+.hero--bg {
+  background-image: '/img/banner.png';
+}
+
+html[data-theme='light'] {
+  --ifm-background-color: #dadad8;
+  --ifm-background-surface-color: #dadad8;
+}
+html[data-theme='light'] .footer {
+  background-color: #d4d4d2;
+}
+
+.intro {
+  margin-top: 3em;
+  margin-bottom: 3em;
 }

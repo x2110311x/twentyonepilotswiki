@@ -1,8 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'twentyonepilots.wiki',
-  tagline: 'The tagline of my site',
-  url: 'https://twentyonepilots.wiki',
+  tagline: 'we do the clicking for the clikkies™',
+  url: 'https://www.twentyonepilots.wiki',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -26,7 +26,7 @@ module.exports = {
         {
           to: 'docs/dmaorg',
           activeBasePath: 'docs',
-          label: 'dmaorg',
+          label: 'dmaorg.info',
           position: 'left',
         },
         {
@@ -49,7 +49,7 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'Dmaorg',
+              label: 'dmaorg.info',
               to: 'docs/dmaorg',
             },
             {
@@ -92,12 +92,16 @@ module.exports = {
             },
             {
               label: 'dmaorg Archive',
-              href: '#tba',
+              href: 'https://www.dmaorg.site',
             },
           ],
         },
       ],
       copyright: 'DISCLAIMER: We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Twenty One Pilots, or any of its subsidiaries or its affiliates. <br>The official Twenty One Pilots website can be found at https://www.twentyonepilots.com/',
+    },
+    googleAnalytics: {
+      trackingID: 'G-N1FJV4NJ8K',
+      anonymizeIP: true, // Should IPs be anonymized?
     },
   },
   presets: [
