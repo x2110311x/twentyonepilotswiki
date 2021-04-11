@@ -81,4 +81,6 @@ img {
 
 mark {
   background-color: #fce300;
+  padding-left: .15em;
+  padding-right: .15em;
 }
