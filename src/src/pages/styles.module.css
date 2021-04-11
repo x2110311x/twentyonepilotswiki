@@ -77,8 +77,16 @@ html[data-theme='light'] .buttons {
   display: flex;
   align-items: center;
   padding: 2rem 0;
-  width: 100%;
 }
+
+
+@media screen and (max-width: 1200px) {
+  .features {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
 
 .featureImage {
   height: 200px;
