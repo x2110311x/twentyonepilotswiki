@@ -100,12 +100,13 @@ The text under the map and its caption says:
 The text once again hints that EAST IS UP with capital letters. When the map is turned so that east is up, the nine circles and their names then correspond with the nine circles on the Blurryface album cover, each representing one song. Moreover, the name written beside each circle corresponds with lyrics from the respective song.
 
 import ThemedImage from '@theme/ThemedImage';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 
 <ThemedImage
   alt="Bishop Names"
   sources={{
-    light: '/docs/dmaorg/assets/bishopnames_light.png',
-    dark: '/docs/dmaorg/assets/bishopnames_dark.png',
+    light:  useBaseUrl('/img/bishopnames_light.png'),
+    dark:  useBaseUrl('/img/bishopnames_dark.png'),
   }}
 />
 
