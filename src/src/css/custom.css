@@ -78,3 +78,7 @@ html[data-theme='light'] .footer {
 img {
   max-width: 500px;
 }
+
+mark {
+  background-color: #fce300;
+}
