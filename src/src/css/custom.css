@@ -57,7 +57,24 @@ html[data-theme='light'] .footer {
   background-color: #d4d4d2;
 }
 
+
 .intro {
   margin-top: 3em;
   margin-bottom: 3em;
+}
+
+@media screen and (max-width: 1200px) {
+  .intro {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+.noDecoLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 500px;
 }

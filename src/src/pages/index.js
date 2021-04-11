@@ -27,7 +27,7 @@ const features = [
     imageUrlLight: 'img/loc-drive.png',
     description: (
       <>
-       Following the success of their single "Level of Concern", a cryptic livestream takes place in the band’s YouTube channel, taking the entire fanbase to a madness-inducing scavenger hunt for codes and flash drives. Only for the savvy enough.
+       Following the success of their single Level of Concern, a cryptic livestream takes place on the band’s YouTube channel, taking the entire fanbase to a madness-inducing scavenger hunt for codes and flash drives. Only for the savvy enough.
       </>
     ),
   },
@@ -84,7 +84,7 @@ export default function Home() {
             twentyonepilots.wiki is an online, community-hosted lore repository of the band Twenty One Pilots. The Grammy-winner alternative rock duo from Columbus, Ohio is famous for weaving puzzling backgrounds for their records, and this hub was created to help the fans navigate through their cryptic works. This site is hosted and updated by the Discord Clique, a fandom community localized mainly on the group-chatting platform Discord. Make sure to join us!
             <br></br>
             <br></br>
-            Use the bookmarks below to navigate through the website. If you have any questions, suggestions or bug reports, make sure to contact us in our own server or through our official twitter @DiscordClique. Thank you for visiting and have fun! "We do the clicking for the clikkies."
+            Use the bookmarks below to navigate through the website. If you have any questions, suggestions or bug reports, make sure to contact us in our own <a class='noDecoLink' href='https://discord.gg/twentyonepilots'> server </a> or through our official twitter <a class='noDecoLink' href="https://www.twitter.com/DiscordClique" >@DiscordClique </a>. Thank you for visiting and have fun! "We do the clicking for the clikkies."
             </p>
           </div>
         </section>
