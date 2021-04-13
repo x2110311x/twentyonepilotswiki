@@ -1,8 +1,9 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'twentyonepilots.wiki',
-  tagline: 'we do the clicking for the clikkies™',
-  url: 'https://www.twentyonepilots.wiki',
+  tagline: 'we do the clicking for the clikkies',
+  //url: 'https://www.twentyonepilots.wiki',
+  url: 'https://twentyonepilots-wiki.web.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -19,7 +20,7 @@ module.exports = {
     navbar: {
       title: 'twentyonepilots.wiki',
       logo: {
-        alt: 'My Site Logo',
+        alt: 'scaled and icy inspired dragon',
         src: 'img/dragon.png',
       },
       items: [
@@ -40,6 +41,11 @@ module.exports = {
           activeBasePath: 'docs',
           label: 'Scaled and Icy',
           position: 'left',
+        },
+        {
+          to: 'https://www.discordclique.com',
+          label: 'Discord Clique',
+          position: 'right',
         },
       ],
     },
@@ -87,8 +93,8 @@ module.exports = {
               href: 'https://github.com/x2110311x/twentyonepilotswiki',
             },
             {
-              label: 'Twenty One Pilots Website',
-              href: 'https://www.twentyonepilots.com',
+              label: 'Our Contributors',
+              to: 'docs/contributors',
             },
             {
               label: 'dmaorg Archive',
@@ -103,6 +109,17 @@ module.exports = {
       trackingID: 'G-N1FJV4NJ8K',
       anonymizeIP: true, // Should IPs be anonymized?
     },
+    image: 'img/dragon.png',
+    metadatas: [
+      {
+        property: 'og:type',
+        content: 'website'
+      },
+      {
+        name: 'description',
+        content: 'we do the clicking for the clikkies'
+      },
+    ],
   },
   presets: [
     [
