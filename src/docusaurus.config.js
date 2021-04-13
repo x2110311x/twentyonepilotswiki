@@ -105,10 +105,6 @@ module.exports = {
       ],
       copyright: 'DISCLAIMER: We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Twenty One Pilots, or any of its subsidiaries or its affiliates. <br>The official Twenty One Pilots website can be found at https://www.twentyonepilots.com/',
     },
-    googleAnalytics: {
-      trackingID: 'G-N1FJV4NJ8K',
-      anonymizeIP: true, // Should IPs be anonymized?
-    },
     image: 'img/dragon.png',
     metadatas: [
       {
@@ -137,4 +133,22 @@ module.exports = {
       },
     ],
   ],
+  scripts: [
+    '/scripts/gtag.js',
+    {
+      src:
+        "https://www.googletagmanager.com/gtag/js?id=G-N1FJV4NJ8K",
+      async: true,
+    },
+  ],
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en'],
+    localeConfigs: {
+      en: {
+        label: 'English',
+        direction: 'ltr',
+      },
+    },
+  },
 };
