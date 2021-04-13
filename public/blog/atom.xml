@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://www.twentyonepilots.wiki/blog</id>
+    <id>https://twentyonepilots-wiki.web.app/blog</id>
     <title>twentyonepilots.wiki Blog</title>
     <updated>2015-10-25T23:29:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://www.twentyonepilots.wiki/blog"/>
+    <link rel="alternate" href="https://twentyonepilots-wiki.web.app/blog"/>
     <subtitle>twentyonepilots.wiki Blog</subtitle>
-    <icon>https://www.twentyonepilots.wiki/img/favicon.ico</icon>
+    <icon>https://twentyonepilots-wiki.web.app/img/favicon.ico</icon>
 </feed>
