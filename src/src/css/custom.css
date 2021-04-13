@@ -75,12 +75,51 @@ html[data-theme='light'] .footer {
   color: inherit;
 }
 
-img {
-  max-width: 500px;
+@media screen and (min-width: 600px){
+  img {
+    max-width: 500px;
+  }
+}
+@media screen and (max-width: 599px){
+  img {
+    max-width: 95%;
+  }
 }
 
-mark {
+.highlight-yellow {
   background-color: #fce300;
   padding-left: .15em;
   padding-right: .15em;
+}
+
+html[data-theme='dark'] .highlight-accent {
+  background-color: #3f9bdc;
+}
+
+html[data-theme='light'] .highlight-accent {
+  color: #bf737e;
+}
+
+html[data-theme='dark'] #transcriptionalt > p > img {
+  filter: invert(50%) sepia(64%) saturate(484%) hue-rotate(162deg) brightness(97%) contrast(94%);
+}
+
+html[data-theme='light'] #transcriptionalt > p > img {
+  filter: invert(55%) sepia(55%) saturate(353%) hue-rotate(302deg) brightness(85%) contrast(81%);
+}
+
+.highlight-accent {
+  background-color: inherit;
+  font-weight: bolder;
+}
+
+#bishopnames {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  line-height: 1em;
+}
+.songtitle {
+  margin-top: .1em;
+  margin-bottom: .3em;
+  font-weight: lighter;
 }
