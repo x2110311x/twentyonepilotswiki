@@ -12,7 +12,7 @@
           "twentyonepilots-wiki"
         ],
         "preview": [
-          "src/build"
+          "twentyonepilots-wiki-preview"
         ]
       }
     }
