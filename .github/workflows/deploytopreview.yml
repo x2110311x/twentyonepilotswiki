@@ -26,8 +26,8 @@ jobs:
   build_and_deploy:
     runs-on: ubuntu-latest
     steps:
+      -  uses: actions/checkout@v2
       - name: Build Docusaurus site
-        uses: actions/checkout@v2
         run: |
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
