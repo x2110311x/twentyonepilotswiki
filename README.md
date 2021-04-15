@@ -10,16 +10,16 @@
 *** github_username, repo_name, twitter_handle, email, project_title, project_description
 -->
 
-![GitHub contributors](https://img.shields.io/github/contributors/x2110311x/twentyonepilotswiki?style=for-the-badge)
-![GitHub issues](https://img.shields.io/github/issues/x2110311x/twentyonepilotswiki?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/x2110311x/twentyonepilotswiki?style=for-the-badge)
-![Twitter Follow](https://img.shields.io/twitter/follow/discordclique?style=for-the-badge)
+[![GitHub contributors](https://img.shields.io/github/contributors/x2110311x/twentyonepilotswiki?style=for-the-badge)](https://github.com/x2110311x/twentyonepilotswiki/graphs/contributors)
+[![GitHub issues](https://img.shields.io/github/issues/x2110311x/twentyonepilotswiki?style=for-the-badge)](https://github.com/x2110311x/twentyonepilotswiki/issues)
+[![GitHub](https://img.shields.io/github/license/x2110311x/twentyonepilotswiki?style=for-the-badge)](https://github.com/x2110311x/twentyonepilotswiki/blob/main/LICENSE)
+[![Twitter Follow](https://img.shields.io/twitter/follow/discordclique?style=for-the-badge)](https://twitter.com/discordclique)
 
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/x2110311x/twentyonepilots">
+  <a href="https://www.twentyonepilots.wiki/">
     <img src="https://www.twentyonepilots.wiki/img/dragon-512x512.png" alt="Logo" width="128" height="128">
   </a>
 
@@ -29,11 +29,13 @@
     twentyonepilots.wiki is an online, community-hosted lore repository of the band Twenty One Pilots.
     <br />
     <br />
-    <a href="https://github.com/x2110311x/twentyonepilotswiki">View Website</a>
+    <a href="https://www.twentyonepilots.wiki/">View Website</a>
     ·
-    <a href="https://github.com/x2110311x/twentyonepilotswiki/issues">Report Issue</a>
+    <a href="https://github.com/x2110311x/twentyonepilotswiki/issues/new/choose">Report Issue</a>
     ·
-    <a href="https://github.com/x2110311x/twentyonepilotswiki/issues">Request New Page</a>
+    <a href="https://github.com/x2110311x/twentyonepilotswiki/issues/new/choose">Request New Page</a>
+    ·
+    <a href="https://discord.gg/twentyonepilots">Join Discord Clique</a>
   </p>
 </p>
 
@@ -65,7 +67,7 @@ twentyonepilots.wiki is an online, community-hosted lore repository of the band 
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Any contributions you make are **greatly appreciated**.
 
 There are two main ways you can contribute:
 
@@ -97,4 +99,4 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Discord Clique - [@DiscordClique](https://twitter.com/discordclique)
 
-Project Link: [https://github.com/x2110311x/twentyonepilotswiki](https://github.com/x2110311x/twentyonepilotswiki)
+Project Link - [https://github.com/x2110311x/twentyonepilotswiki](https://github.com/x2110311x/twentyonepilotswiki)
