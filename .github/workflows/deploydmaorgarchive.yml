@@ -1,4 +1,4 @@
-name: Deploy to Firebase Hosting Preview on merge
+name: Deploy to Firebase Hosting Dmaorg
 'on':
   push:
     branches:
