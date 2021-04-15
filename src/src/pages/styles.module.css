@@ -1,0 +1,94 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  background: url("/img/banner.png");
+  background-position: 35%;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+@media screen and (max-width: 950px) {
+  .heroBanner {
+    padding: 13rem 0;
+  }
+}
+
+@media screen and (min-width: 951px) {
+  .heroBanner {
+    padding: 22rem 0;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .hero__title {
+    font-size:7vw;
+  }
+}
+
+@media screen and (min-width: 571px) {
+  .hero__title {
+    font-size:4vw;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .hero__subtitle {
+    font-size:4vw;
+  }
+}
+
+@media screen and (min-width: 571px) {
+  .hero__subtitle {
+    font-size:2vw;
+  }
+}
+
+html[data-theme='light'] .hero__title {
+  text-shadow: 2px 2px 5px #000000;
+}
+
+html[data-theme='light'] .hero__subtitle {
+  text-shadow: 2px 2px 5px #000000;
+}
+
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+}
+
+html[data-theme='light'] .buttons {
+  text-shadow: 1px 1px 3px #000000;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .features {
+    margin-left: 2em;
+    margin-right: 2em;
+  }
+}
+
+
+.featureImage {
+  height: 200px;
+  width: 200px;
+}

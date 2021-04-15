@@ -1,0 +1,46 @@
+name: Deploy to Firebase Hosting Preview
+'on':
+  push:
+    branches:
+      - preview
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.x'
+      - name: Test Build
+        run: |
+          cd src
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
+          npm run build
+  build_and_deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Build Docusaurus site
+        run: |
+          cd src
+          if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
+          npm run build
+      - name: Install firebase tools
+        run: |
+          sudo npm install -g firebase-tools
+          firebase use twentyonepilots-wiki --token ${{ secrets.FIREBASE_TOKEN }}
+      - name: Deploy to production site
+        run: firebase deploy --only hosting:preview --non-interactive --token ${{ secrets.FIREBASE_TOKEN }} -m "RunID ${{ github.run_id }} Commit SHA ${{ github.sha }}"

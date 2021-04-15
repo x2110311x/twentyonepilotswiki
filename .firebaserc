@@ -1,0 +1,20 @@
+{
+  "projects": {
+    "default": "twentyonepilots-wiki"
+  },
+  "targets": {
+    "twentyonepilots-wiki": {
+      "hosting": {
+        "dmaorg": [
+          "dmaorgarchive"
+        ],
+        "wiki": [
+          "twentyonepilots-wiki"
+        ],
+        "preview": [
+          "twentyonepilots-wiki-preview"
+        ]
+      }
+    }
+  }
+}
