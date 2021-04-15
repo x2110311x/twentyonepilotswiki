@@ -134,7 +134,7 @@ module.exports = {
     '/scripts/gtag.js',
     {
       src:
-        "https://www.googletagmanager.com/gtag/js?id=G-W9732NZFQE",
+        "https://www.googletagmanager.com/gtag/js?id=G-4T442R4785",
       async: true,
     },
   ],
