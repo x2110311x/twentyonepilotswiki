@@ -10,6 +10,9 @@
         ],
         "wiki": [
           "twentyonepilots-wiki"
+        ],
+        "preview": [
+          "twentyonepilots-wiki-preview"
         ]
       }
     }

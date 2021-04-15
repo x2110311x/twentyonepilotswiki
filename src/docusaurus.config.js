@@ -2,8 +2,7 @@
 module.exports = {
   title: 'twentyonepilots.wiki',
   tagline: 'we do the clicking for the clikkies',
-  //url: 'https://www.twentyonepilots.wiki',
-  url: 'https://twentyonepilots-wiki.web.app',
+  url: 'https://www.twentyonepilots.wiki',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -13,7 +12,6 @@ module.exports = {
   themeConfig: {
     hideableSidebar: true,
     colorMode: {
-      // "light" | "dark"
       defaultMode: 'dark',
       respectPrefersColorScheme: true,
     },
@@ -21,7 +19,7 @@ module.exports = {
       title: 'twentyonepilots.wiki',
       logo: {
         alt: 'scaled and icy inspired dragon',
-        src: 'img/dragon.png',
+        src: 'img/dragon-512x512.png',
       },
       items: [
         {
@@ -81,7 +79,7 @@ module.exports = {
             },
             {
               label: 'Discord Clique on Twitter',
-              href: 'http://twitter.com/discordClique/',
+              href: 'http://www.twitter.com/discordclique/',
             }
           ],
         },
@@ -105,7 +103,7 @@ module.exports = {
       ],
       copyright: 'DISCLAIMER: We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Twenty One Pilots, or any of its subsidiaries or its affiliates. <br>The official Twenty One Pilots website can be found at https://www.twentyonepilots.com/',
     },
-    image: 'img/dragon.png',
+    image: 'img/dragon-512x512.png',
     metadatas: [
       {
         property: 'og:type',
@@ -123,7 +121,6 @@ module.exports = {
       {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
           editUrl:
             'https://github.com/x2110311x/twentyonepilotswiki/edit/main/src/',
         },
