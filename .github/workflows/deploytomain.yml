@@ -29,6 +29,7 @@ jobs:
       - uses: actions/checkout@v2
       - name: Build Docusaurus site
         run: |
+          cd src
           if [ -e yarn.lock ]; then
           yarn install --frozen-lockfile
           elif [ -e package-lock.json ]; then
