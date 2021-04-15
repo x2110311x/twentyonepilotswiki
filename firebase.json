@@ -2,7 +2,16 @@
   "hosting": [
     {
       "target": "wiki",
-      "public": "public",
+      "public": "src/build",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ]
+    },
+    {
+      "target": "preview",
+      "public": "src/build",
       "ignore": [
         "firebase.json",
         "**/.*",
