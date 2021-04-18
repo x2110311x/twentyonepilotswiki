@@ -5,7 +5,7 @@ module.exports = {
       label: 'dmaorg.info',
       items: [
         'dmaorg/introduction',
-        'dmaorg/04-20-18-Vessel-gif-changed'
+        'dmaorg/04-20-18-Vessel-gif-changed',
         'dmaorg/original-dmaorg-files',
         'dmaorg/05-09-18-second-journal-added',
         'dmaorg/05-31-18-Cheetah-gif-added',
