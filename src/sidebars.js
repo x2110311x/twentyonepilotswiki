@@ -37,11 +37,11 @@ module.exports = {
         type: 'category',
         label: 'Teaser Updates',
         items: [
-          'clancy-is-dead', 
-          'sai-is-propaganda', 
-          'social-media-changes',
-          'album-name-revealed',
-          'promotional-posters-discovered'
+          'scaledandicy/clancy-is-dead', 
+          'scaledandicy/sai-is-propaganda', 
+          'scaledandicy/social-media-changes',
+          'scaledandicy/album-name-revealed',
+          'scaledandicy/promotional-posters-discovered'
           ],
         },
         {
