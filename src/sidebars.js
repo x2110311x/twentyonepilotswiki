@@ -32,9 +32,7 @@ module.exports = {
   ],
   scaledandicy: [
     {
-      type: 'category',
-      label: 'Scaled and Icy',
-      items: [
+      'Scaled and Icy': [
         {
         type: 'category',
         label: 'Teaser Updates',
@@ -43,7 +41,7 @@ module.exports = {
           'sai-is-propaganda', 
           'social-media-changes',
           'album-name-revealed',
-          'promotional-posters-discovered',
+          'promotional-posters-discovered'
           ],
         },
         {
