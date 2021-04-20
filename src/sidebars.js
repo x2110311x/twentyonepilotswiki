@@ -35,7 +35,24 @@ module.exports = {
       type: 'category',
       label: 'Scaled and Icy',
       items: [
-        'scaledandicy/sai-coming-soon',
+        {
+        type: 'category',
+        label: 'Teaser Updates',
+        items: [
+          'clancy-is-dead', 
+          'sai-is-propaganda', 
+          'social-media-changes',
+          'album-name-revealed',
+          'promotional-posters-discovered',
+          ],
+        },
+        {
+        type: 'category',
+        label: 'SAI Updates',
+        items: [
+          'scaledandicy/sai-coming-soon'
+          ],
+        },
       ],
     },
   ],
