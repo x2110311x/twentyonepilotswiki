@@ -31,10 +31,31 @@ module.exports = {
   ],
   scaledandicy: [
     {
+<<<<<<< Updated upstream
       type: 'category',
       label: 'Scaled and Icy',
       items: [
         'scaledandicy/sai-coming-soon',
+=======
+      'Scaled and Icy': [
+        {
+        type: 'category',
+        label: 'Teaser Updates',
+        items: [
+          'scaledandicy/clancy-is-dead', 
+          'scaledandicy/sai-is-propaganda', 
+          'scaledandicy/social-media-changes',
+          'scaledandicy/album-name-revealed'
+          ],
+        },
+        {
+        type: 'category',
+        label: 'SAI Updates',
+        items: [
+          'scaledandicy/sai-coming-soon'
+          ],
+        },
+>>>>>>> Stashed changes
       ],
     },
   ],
