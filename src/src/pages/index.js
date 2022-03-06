@@ -3,7 +3,7 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import useThemeContext from '@theme/hooks/useThemeContext';
+import {useColorMode} from '@docusaurus/theme-common';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './styles.module.css';
 
@@ -47,12 +47,12 @@ const features = [
 function Feature({link, imageUrlDark, imageUrlLight, title, description}) {
   const imgUrlDark = useBaseUrl(imageUrlDark);
   const imgUrlLight = useBaseUrl(imageUrlLight);
-  const { isDarkTheme } = useThemeContext();
+  const { isDarkTheme } = useColorMode();
   return (
       <div className={clsx('col col--4', styles.feature)}>
         {imgUrlDark && (
-          <div className="text--center">
-            <a class='lore-module-link' href={link}>
+          <div className="text--center featureimg ">
+            <a class='lore-module-link ' href={link}>
               <img className={styles.featureImage} src={isDarkTheme ? imgUrlDark : imgUrlLight} alt={title} />
             </a>
           </div>
