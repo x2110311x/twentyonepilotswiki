@@ -5,6 +5,7 @@ module.exports = {
       label: 'dmaorg.info',
       items: [
         'dmaorg/introduction',
+        'dmaorg/04-20-18-Vessel-gif-changed',
         'dmaorg/original-dmaorg-files',
         'dmaorg/05-09-18-second-journal-added',
         'dmaorg/05-31-18-Cheetah-gif-added',
@@ -31,10 +32,25 @@ module.exports = {
   ],
   scaledandicy: [
     {
-      type: 'category',
-      label: 'Scaled and Icy',
-      items: [
-        'scaledandicy/sai-coming-soon',
+      'Scaled and Icy': [
+        {
+        type: 'category',
+        label: 'Teaser Updates',
+        items: [
+          'scaledandicy/clancy-is-dead', 
+          'scaledandicy/sai-is-propaganda', 
+          'scaledandicy/social-media-changes',
+          'scaledandicy/album-name-revealed',
+          'scaledandicy/promotional-posters-discovered'
+          ],
+        },
+        {
+        type: 'category',
+        label: 'SAI Updates',
+        items: [
+          'scaledandicy/sai-coming-soon'
+          ],
+        },
       ],
     },
   ],

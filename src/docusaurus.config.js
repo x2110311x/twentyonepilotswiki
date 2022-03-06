@@ -104,7 +104,7 @@ module.exports = {
       copyright: 'DISCLAIMER: We are not affiliated, associated, authorized, endorsed by, or in any way officially connected with Twenty One Pilots, or any of its subsidiaries or its affiliates. <br>The official Twenty One Pilots website can be found at https://www.twentyonepilots.com/',
     },
     image: 'img/dragon-512x512.png',
-    metadatas: [
+    metadata: [
       {
         property: 'og:type',
         content: 'website'
