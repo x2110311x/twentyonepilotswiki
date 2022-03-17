@@ -18,7 +18,7 @@ module.exports = {
         'dmaorg/01-22-19-Fourth-Journal-added',
         'dmaorg/04-02-21-terminating-files',
         'dmaorg/04-05-21-dmaorg-terminated',
-        '03-16-22-dmaorg-unterminated-trench-map-added'
+        'dmaorg/03-16-22-dmaorg-unterminated-trench-map-added',
       ],
     },
   ],
