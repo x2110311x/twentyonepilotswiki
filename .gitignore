@@ -66,3 +66,7 @@ node_modules/
 .env
 .vscode/settings.json
 .markdownlint.json
+.DS_Store
+dmaorg/.DS_Store
+dmaorg/physical_letter/.DS_Store
+dmaorg/physical_letter/assets/.DS_Store
