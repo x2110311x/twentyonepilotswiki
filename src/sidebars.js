@@ -32,6 +32,13 @@ module.exports = {
   ],
   scaledandicy: [
     {
+      type: 'category',
+      label: 'Scaled and Icy',
+      items: [
+        'scaledandicy/sai-coming-soon'
+        ],
+    },
+    /*{
       'Scaled and Icy': [
         {
         type: 'category',
@@ -52,6 +59,6 @@ module.exports = {
           ],
         },
       ],
-    },
+    },*/
   ],
 };

@@ -38,7 +38,7 @@ const features = [
     imageUrlLight: 'img/trashdragon.png',
     description: (
       <>
-        Keep up with the band’s vibrant return, unlike anything they’ve done before. Their upcoming new album comes with a mysterious Livestream Experience hosted by DMA ORG and Good Day Dema. “It all happens on May 21st.”
+        Keep up with the band’s vibrant return, unlike anything they’ve done before. Their latest new album comes with a mysterious Livestream Experience hosted by DMA ORG and Good Day Dema. “It all happens on May 21st.”
       </>
     ),
   },
