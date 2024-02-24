@@ -17,7 +17,8 @@ module.exports = {
         'dmaorg/07-18-18-Second-handwritten-note-added',
         'dmaorg/01-22-19-Fourth-Journal-added',
         'dmaorg/04-02-21-terminating-files',
-        'dmaorg/04-05-21-dmaorg-terminated'
+        'dmaorg/04-05-21-dmaorg-terminated',
+        'dmaorg/03-17-22-clancy-on-voldsoy'
       ],
     },
   ],
