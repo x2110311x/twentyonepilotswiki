@@ -55,28 +55,5 @@ module.exports = {
           'scaledandicy/sai-coming-soon'
           ],
         },
-    },
-    /*{
-      'Scaled and Icy': [
-        {
-        type: 'category',
-        label: 'Teaser Updates',
-        items: [
-          'scaledandicy/clancy-is-dead', 
-          'scaledandicy/sai-is-propaganda', 
-          'scaledandicy/social-media-changes',
-          'scaledandicy/album-name-revealed',
-          'scaledandicy/promotional-posters-discovered'
-          ],
-        },
-        {
-        type: 'category',
-        label: 'SAI Updates',
-        items: [
-          'scaledandicy/sai-coming-soon'
-          ],
-        },
-      ],
-    },*/
-  ],
+  ]
 };
