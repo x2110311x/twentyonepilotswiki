@@ -36,6 +36,23 @@ module.exports = {
   ],
   scaledandicy: [
     {
+      type: 'category',
+      label: 'Scaled and Icy',
+      items: [
+        'scaledandicy/sai-coming-soon',
+        'scaledandicy/sai-is-propaganda',
+        'scaledandicy/social-media-changes',
+        'scaledandicy/clancy-is-dead',
+        'scaledandicy/dmaorg-terminated',
+        'scaledandicy/promotional-posters-discovered',
+        'scaledandicy/livestream-website',
+        'scaledandicy/livestream-experience'
+        
+        
+      
+        ],
+    },
+    /*{
       'Scaled and Icy': [
         {
         type: 'category',
@@ -56,6 +73,6 @@ module.exports = {
           ],
         },
       ],
-    },
+    },*/
   ],
 };
