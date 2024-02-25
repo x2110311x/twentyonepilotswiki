@@ -67,7 +67,15 @@ html[data-theme='light'] .footer {
   .intro {
     margin-left: 2em;
     margin-right: 2em;
-  }
+  } 
+}
+
+html[data-theme='light'] .featureimg:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+html[data-theme='dark'] .featureimg:hover {
+  box-shadow: 0 4px 8px 0 rgba(255, 255, 255, 0.3), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
 }
 
 .noDecoLink {

@@ -5,6 +5,7 @@ module.exports = {
       label: 'dmaorg.info',
       items: [
         'dmaorg/introduction',
+        'dmaorg/04-20-18-Vessel-gif-changed',
         'dmaorg/original-dmaorg-files',
         'dmaorg/05-09-18-second-journal-added',
         'dmaorg/05-31-18-Cheetah-gif-added',
@@ -16,7 +17,11 @@ module.exports = {
         'dmaorg/07-18-18-Second-handwritten-note-added',
         'dmaorg/01-22-19-Fourth-Journal-added',
         'dmaorg/04-02-21-terminating-files',
-        'dmaorg/04-05-21-dmaorg-terminated'
+        'dmaorg/04-05-21-dmaorg-terminated',
+        'dmaorg/03-16-22-dmaorg-unterminated-trench-map-added',
+        'dmaorg/03-17-22-third-handwritten-note-added',
+        'dmaorg/03-18-22-weapon-diagram-added',
+        'dmaorg/03-18-22-fourth-handwritten-note-added'
       ],
     },
   ],
@@ -29,23 +34,18 @@ module.exports = {
       ],
     },
   ],
-  scaledandicy: [
-    {
-<<<<<<< Updated upstream
-      type: 'category',
-      label: 'Scaled and Icy',
-      items: [
-        'scaledandicy/sai-coming-soon',
-=======
       'Scaled and Icy': [
         {
         type: 'category',
         label: 'Teaser Updates',
         items: [
-          'scaledandicy/clancy-is-dead', 
-          'scaledandicy/sai-is-propaganda', 
-          'scaledandicy/social-media-changes',
-          'scaledandicy/album-name-revealed'
+        'scaledandicy/sai-is-propaganda',
+        'scaledandicy/social-media-changes',
+        'scaledandicy/clancy-is-dead',
+        'scaledandicy/dmaorg-terminated',
+        'scaledandicy/promotional-posters-discovered',
+        'scaledandicy/livestream-website',
+        'scaledandicy/livestream-experience'
           ],
         },
         {
@@ -55,8 +55,28 @@ module.exports = {
           'scaledandicy/sai-coming-soon'
           ],
         },
->>>>>>> Stashed changes
-      ],
     },
+    /*{
+      'Scaled and Icy': [
+        {
+        type: 'category',
+        label: 'Teaser Updates',
+        items: [
+          'scaledandicy/clancy-is-dead', 
+          'scaledandicy/sai-is-propaganda', 
+          'scaledandicy/social-media-changes',
+          'scaledandicy/album-name-revealed',
+          'scaledandicy/promotional-posters-discovered'
+          ],
+        },
+        {
+        type: 'category',
+        label: 'SAI Updates',
+        items: [
+          'scaledandicy/sai-coming-soon'
+          ],
+        },
+      ],
+    },*/
   ],
 };
