@@ -29,15 +29,15 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/levelofconcern',
+          to: 'docs/scaledandicy',  
           activeBasePath: 'docs',
-          label: 'Level of Concern',
+          label: 'Scaled and Icy',
           position: 'left',
         },
         {
-          to: 'docs/scaledandicy',
+          to: 'docs/clancy',
           activeBasePath: 'docs',
-          label: 'Scaled and Icy',
+          label: 'Clancy',
           position: 'left',
         },
         {
