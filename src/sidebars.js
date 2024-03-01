@@ -45,8 +45,6 @@ module.exports = {
         'dmaorg/04-02-21-terminating-files',
         'dmaorg/04-05-21-dmaorg-terminated',
         'scaledandicy/promotional-posters-discovered',
-        'scaledandicy/livestream-website',
-        'scaledandicy/livestream-experience'
           ],
         },
         {
