@@ -29,7 +29,7 @@ module.exports = {
           position: 'left',
         },
         {
-          to: 'docs/scaledandicy',  
+          to: 'docs/scaledandicy/04-02-21-terminating-files',  
           activeBasePath: 'docs',
           label: 'Scaled and Icy',
           position: 'left',
@@ -58,7 +58,7 @@ module.exports = {
             },
             {
               label: 'Scaled and Icy',
-              to: 'docs/scaledandicy',
+              to: 'docs/scaledandicy/04-02-21-terminating-files',
             },
             {
               label: 'Clancy',

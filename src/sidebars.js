@@ -2,7 +2,7 @@ module.exports = {
   trench: [
     {
       type: 'category',
-      label: 'Trench',
+      label: 'dmaorg',
       items: [
         'trench/introduction',
         'trench/04-20-18-Vessel-gif-changed',
@@ -15,41 +15,38 @@ module.exports = {
         'trench/07-06-18-torch-gif-added',
         'trench/07-08-18-first-handwritten-note-added',
         'trench/07-18-18-Second-handwritten-note-added',
-        'trench/01-22-19-Fourth-Journal-added',
-        'trench/04-02-21-terminating-files',
-        'trench/04-05-21-dmaorg-terminated',
-        'trench/03-16-22-dmaorg-unterminated-trench-map-added',
-        'trench/03-17-22-third-handwritten-note-added',
-        'trench/03-18-22-weapon-diagram-added',
-        'trench/03-18-22-fourth-handwritten-note-added'
+        'trench/01-22-19-Fourth-Journal-added'
       ],
     },
   ],
       'Scaled and Icy': [
         {
+          type: 'category',
+          label: 'dmaorg updates',
+          items: [
+          'scaledandicy/04-02-21-terminating-files',
+          'scaledandicy/04-05-21-dmaorg-terminated',
+          'scaledandicy/03-16-22-dmaorg-unterminated-trench-map-added',
+          'scaledandicy/03-17-22-third-handwritten-note-added',
+          'scaledandicy/03-18-22-weapon-diagram-added',
+          'scaledandicy/03-18-22-fourth-handwritten-note-added'
+            ],
+          }/*,
+        {
         type: 'category',
-        label: 'Teaser Updates',
+        label: 'Misc',
         items: [
         'scaledandicy/sai-is-propaganda',
         'scaledandicy/social-media-changes',
         'scaledandicy/clancy-is-dead',
-        'trench/04-02-21-terminating-files',
-        'trench/04-05-21-dmaorg-terminated',
         'scaledandicy/promotional-posters-discovered',
           ],
-        },
-        {
-        type: 'category',
-        label: 'SAI Updates',
-        items: [
-          'scaledandicy/sai-coming-soon'
-          ],
-        },
+        }*/
   ],
   clancy: [
     {
       type: 'category',
-      label: 'Clancy',
+      label: 'dmaorg updates',
       items: [
         'clancy/clancy-coming-soon',
       ],
