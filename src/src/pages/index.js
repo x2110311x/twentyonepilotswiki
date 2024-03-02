@@ -10,13 +10,13 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'dmaorg.info',
-    link: '/docs/dmaorg',
+    title: 'Trench',
+    link: '/docs/trench',
     imageUrlDark: 'img/dema-light.png',
     imageUrlLight: 'img/dema.png',
     description: (
       <>
-        A black-and-white first glance to the Sacred Municipality of DEMA and its bishops through the eyes of Clancy and his violation code. Unveil the story of the Banditos, themed around the band’s 2018 album TRENCH.
+        A black-and-white first glance to the Sacred Municipality of DEMA and its bishops through the eyes of Clancy and his violation code. Unveil the story of the Banditos, themed around the band's 2018 album TRENCH.
       </>
     ),
   },

@@ -23,9 +23,9 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/dmaorg',
+          to: 'docs/trench',
           activeBasePath: 'docs',
-          label: 'dmaorg.info',
+          label: 'Trench',
           position: 'left',
         },
         {
@@ -53,16 +53,16 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'dmaorg.info',
-              to: 'docs/dmaorg',
-            },
-            {
-              label: 'Level of Concern',
-              to: 'docs/levelofconcern',
+              label: 'Trench',
+              to: 'docs/trench',
             },
             {
               label: 'Scaled and Icy',
               to: 'docs/scaledandicy',
+            },
+            {
+              label: 'Clancy',
+              to: 'docs/clancy',
             },
           ],
         },
