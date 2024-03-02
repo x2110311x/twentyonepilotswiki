@@ -23,21 +23,21 @@ module.exports = {
       },
       items: [
         {
-          to: 'docs/dmaorg',
+          to: 'docs/trench',
           activeBasePath: 'docs',
-          label: 'dmaorg.info',
+          label: 'Trench',
           position: 'left',
         },
         {
-          to: 'docs/levelofconcern',
-          activeBasePath: 'docs',
-          label: 'Level of Concern',
-          position: 'left',
-        },
-        {
-          to: 'docs/scaledandicy',
+          to: 'docs/scaledandicy/04-02-21-terminating-files',  
           activeBasePath: 'docs',
           label: 'Scaled and Icy',
+          position: 'left',
+        },
+        {
+          to: 'docs/clancy',
+          activeBasePath: 'docs',
+          label: 'Clancy',
           position: 'left',
         },
         {
@@ -53,16 +53,16 @@ module.exports = {
           title: 'Docs',
           items: [
             {
-              label: 'dmaorg.info',
-              to: 'docs/dmaorg',
-            },
-            {
-              label: 'Level of Concern',
-              to: 'docs/levelofconcern',
+              label: 'Trench',
+              to: 'docs/trench',
             },
             {
               label: 'Scaled and Icy',
-              to: 'docs/scaledandicy',
+              to: 'docs/scaledandicy/04-02-21-terminating-files',
+            },
+            {
+              label: 'Clancy',
+              to: 'docs/clancy',
             },
           ],
         },

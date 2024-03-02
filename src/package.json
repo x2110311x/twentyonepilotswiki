@@ -1,6 +1,6 @@
 {
   "name": "twentyonepilots-wiki",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "docusaurus": "docusaurus",
@@ -23,6 +23,7 @@
     "autoprefixer": "^10.4.2",
     "clsx": "^1.1.1",
     "docusaurus": "^1.14.7",
+    "memfs": "^4.7.7",
     "postcss": "^8.4.7",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
