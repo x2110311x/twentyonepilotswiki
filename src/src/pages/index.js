@@ -10,35 +10,35 @@ import styles from './styles.module.css';
 
 const features = [
   {
-    title: 'dmaorg.info',
-    link: '/docs/dmaorg',
+    title: 'Trench',
+    link: '/docs/trench',
     imageUrlDark: 'img/dema-light.png',
     imageUrlLight: 'img/dema.png',
     description: (
       <>
-        A black-and-white first glance to the Sacred Municipality of DEMA and its bishops through the eyes of Clancy and his violation code. Unveil the story of the Banditos, themed around the band’s 2018 album TRENCH.
-      </>
-    ),
-  },
-  {
-    title: 'Level of Concern',
-    link: '/docs/levelofconcern',
-    imageUrlDark: 'img/loc-drive.png',
-    imageUrlLight: 'img/loc-drive.png',
-    description: (
-      <>
-       Following the success of their single Level of Concern, a cryptic livestream takes place on the band’s YouTube channel, taking the entire fanbase to a madness-inducing scavenger hunt for codes and flash drives. Only for the savvy enough.
+        A black-and-white first glance to the Sacred Municipality of DEMA and its bishops through the eyes of Clancy and his violation code. Unveil the story of the Banditos, themed around the band's 2018 album TRENCH.
       </>
     ),
   },
   {
     title: 'Scaled and Icy',
-    link: '/docs/scaledandicy',
+    link: '/docs/scaledandicy/04-02-21-terminating-files',
     imageUrlDark: 'img/trashdragon.png',
     imageUrlLight: 'img/trashdragon.png',
     description: (
       <>
         Keep up with the band’s vibrant return, unlike anything they’ve done before. Their latest new album comes with a mysterious Livestream Experience hosted by DMA ORG and Good Day Dema. “It all happens on May 21st.”
+      </>
+    ),
+  },
+  {
+    title: 'Clancy',
+    link: '/docs/clancy',
+    imageUrlDark: 'img/clancyeralogo.png',
+    imageUrlLight: 'img/clancyeralogo.png',
+    description: (
+      <>
+        Clancy, the bands 7th album, is set to finish out the story of DEMA and Clancy's battle against the bishops. The album is scheduled to release on May 17th, 2024.
       </>
     ),
   },

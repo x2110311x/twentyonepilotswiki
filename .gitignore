@@ -66,3 +66,14 @@ node_modules/
 .env
 .vscode/settings.json
 .markdownlint.json
+.DS_Store
+dmaorg/.DS_Store
+dmaorg/012219/found/.DS_Store
+dmaorg/022824-1/.DS_Store
+dmaorg/022824-2/.DS_Store
+dmaorg/022824-3/.DS_Store
+dmaorg/022824-4/.DS_Store
+dmaorg/022824-5/.DS_Store
+dmaorg/022824-5/found/.DS_Store
+dmaorg/img/.DS_Store
+dmaorg/img/4cbae6dd3f58/.DS_Store
