@@ -31,17 +31,17 @@ module.exports = {
           'scaledandicy/03-18-22-weapon-diagram-added',
           'scaledandicy/03-18-22-fourth-handwritten-note-added'
             ],
-          }/*,
+          },
         {
         type: 'category',
-        label: 'Misc',
+        label: 'Teaser Updates',
         items: [
         'scaledandicy/sai-is-propaganda',
         'scaledandicy/social-media-changes',
         'scaledandicy/clancy-is-dead',
         'scaledandicy/promotional-posters-discovered',
           ],
-        }*/
+        }
   ],
   clancy: [
     {
