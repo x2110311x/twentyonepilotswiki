@@ -22,7 +22,7 @@ const features = [
   },
   {
     title: 'Scaled and Icy',
-    link: '/docs/scaledandicy',
+    link: '/docs/scaledandicy/04-02-21-terminating-files',
     imageUrlDark: 'img/trashdragon.png',
     imageUrlLight: 'img/trashdragon.png',
     description: (
