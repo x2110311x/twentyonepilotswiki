@@ -48,7 +48,10 @@ module.exports = {
       type: 'category',
       label: 'dmaorg updates',
       items: [
-        'clancy/clancy-coming-soon',
+        'clancy/02-15-24-physical-letter',
+        'clancy/02-28-24-fifth-journal-added',
+        'clancy/02-28-24-sixth-journal-added',
+        'clancy/02-28-24-seventh-journal-added'
       ],
     },
   ]
