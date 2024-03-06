@@ -52,7 +52,10 @@ module.exports = {
         'clancy/02-15-24-physical-letter',
         'clancy/02-28-24-fifth-journal-added',
         'clancy/02-28-24-sixth-journal-added',
-        'clancy/02-28-24-seventh-journal-added'
+        'clancy/02-28-24-seventh-journal-added',
+        'clancy/ned-lofi',
+        'clancy/red-tape',
+        'clancy/promotional-posters-clancy'
       ],
     },
   ]
