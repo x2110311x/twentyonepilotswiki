@@ -43,7 +43,7 @@ module.exports = {
           ],
         }
   ],
-  clancy: [
+  'Clancy': [
     {
       type: 'category',
       label: 'dmaorg updates',
@@ -52,11 +52,19 @@ module.exports = {
         'clancy/02-15-24-physical-letter',
         'clancy/02-28-24-fifth-journal-added',
         'clancy/02-28-24-sixth-journal-added',
-        'clancy/02-28-24-seventh-journal-added',
-        'clancy/ned-lofi',
-        'clancy/red-tape',
-        'clancy/promotional-posters-clancy'
+        'clancy/02-28-24-seventh-journal-added'
       ],
     },
+    {
+      type: 'category',
+      label: 'Teaser Updates',
+      items: [
+        'clancy/ned-lofi',
+        'clancy/red-tape',
+        'clancy/promotional-posters-clancy',
+        'clancy/i-am-clancy',
+        'clancy/album-announcement'
+        ],
+      }
   ]
 };
