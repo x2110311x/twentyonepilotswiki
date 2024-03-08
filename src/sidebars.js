@@ -40,6 +40,7 @@ module.exports = {
         'scaledandicy/social-media-changes',
         'scaledandicy/clancy-is-dead',
         'scaledandicy/promotional-posters-discovered',
+        'scaledandicy/livestream-website'
           ],
         }
   ],
