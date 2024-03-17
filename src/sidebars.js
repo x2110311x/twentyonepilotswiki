@@ -28,8 +28,7 @@ module.exports = {
           'scaledandicy/04-05-21-dmaorg-terminated',
           'scaledandicy/03-16-22-dmaorg-unterminated-trench-map-added',
           'scaledandicy/03-17-22-third-handwritten-note-added',
-          'scaledandicy/03-18-22-weapon-diagram-added',
-          'scaledandicy/03-18-22-fourth-handwritten-note-added'
+          'scaledandicy/03-18-22-fourth-handwritten-note-added-weapon-diagram-added'
             ],
           },
         {
@@ -50,9 +49,7 @@ module.exports = {
       items: [
         'clancy/clancy-coming-soon',
         'clancy/02-15-24-physical-letter',
-        'clancy/02-28-24-fifth-journal-added',
-        'clancy/02-28-24-sixth-journal-added',
-        'clancy/02-28-24-seventh-journal-added'
+        'clancy/02-28-24-mailed-journals-added',
       ],
     },
     {
