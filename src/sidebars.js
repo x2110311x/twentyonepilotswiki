@@ -49,7 +49,7 @@ module.exports = {
       items: [
         'clancy/clancy-coming-soon',
         'clancy/02-15-24-physical-letter',
-        'clancy/02-28-24-mailed-journals-added',
+        'clancy/02-28-24-mailed-letter-added-fifth-and-sixth-journals-added',
       ],
     },
     {
