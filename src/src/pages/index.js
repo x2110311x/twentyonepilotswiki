@@ -27,7 +27,7 @@ const features = [
     imageUrlLight: 'img/trashdragon.png',
     description: (
       <>
-        Keep up with the band’s vibrant return, unlike anything they’ve done before. Their latest new album comes with a mysterious Livestream Experience hosted by DMA ORG and Good Day Dema. “It all happens on May 21st.”
+        Keep up with the band’s vibrant return, unlike anything they’ve done before. Their 2021 album comes along with a mysterious Livestream Experience hosted by DMA ORG and Good Day Dema. “It all happens on May 21st.”
       </>
     ),
   },
@@ -38,7 +38,7 @@ const features = [
     imageUrlLight: 'img/clancyeralogo.png',
     description: (
       <>
-        Clancy, the bands 7th album, is set to finish out the story of DEMA and Clancy's battle against the bishops. The album is scheduled to release on May 17th, 2024.
+        Clancy, the band's 7th album, is set to finish out the epic saga of Clancy's battle against the bishops of DEMA. The album is scheduled to release on May 24th, 2024.
       </>
     ),
   },
@@ -81,10 +81,10 @@ export default function Home() {
           <div className="container">
             <h3>Welcome! </h3>
             <p>
-            twentyonepilots.wiki is an online, community-hosted lore repository of the band Twenty One Pilots. The Grammy-winner alternative rock duo from Columbus, Ohio is famous for weaving puzzling backgrounds for their records, and this hub was created to help the fans navigate through their cryptic works. This site is hosted and updated by the Discord Clique, a fandom community localized mainly on the group-chatting platform Discord. Make sure to join us!
+            twentyonepilots.wiki is an online, community-hosted lore repository of the band Twenty One Pilots. The Grammy-winner, alternative rock duo from Columbus, Ohio is famous for weaving puzzling backgrounds for their records, and this hub was created to help the fans navigate through their cryptic works. This site is hosted and updated by the Discord Clique, a fandom community localized mainly on the group-chatting platform Discord. Make sure to join us!
             <br></br>
             <br></br>
-            Use the bookmarks below to navigate through the website. If you have any questions, suggestions or bug reports, make sure to contact us in our own <a class='noDecoLink' href='https://discord.gg/twentyonepilots'> server </a> or through our official twitter <a class='noDecoLink' href="https://www.twitter.com/DiscordClique" >@DiscordClique </a>. Thank you for visiting and have fun! "We do the clicking for the clikkies."
+            Use the bookmarks below to navigate through the website. If you have any questions, suggestions or bug reports, make sure to contact us in our own <a class='noDecoLink' href='https://discord.gg/twentyonepilots'> server </a> or through our official twitter <a class='noDecoLink' href="https://www.twitter.com/DiscordClique" >@DiscordClique</a>. Thank you for visiting and have fun! "We do the clicking for the clikkies."
             </p>
           </div>
         </section>
