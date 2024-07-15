@@ -38,7 +38,7 @@ const features = [
     imageUrlLight: 'img/clancyeralogo.png',
     description: (
       <>
-        Clancy, the band's 7th album, is set to finish out the epic saga of Clancy's battle against the bishops of DEMA. The album is scheduled to release on May 24th, 2024.
+        Clancy, the band's 7th album, is set to finish out the epic saga of Clancy's battle against the bishops of DEMA. The album was released on May 24th, 2024.
       </>
     ),
   },
