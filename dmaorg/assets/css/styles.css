@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'CascadiaMonoPL';
+    src: url('/assets/fonts/CascadiaMonoPL.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@layer utilities {
+    .font-cascadia {
+        font-family: 'CascadiaMonoPL';
+        font-weight: 500;
+    }
+}

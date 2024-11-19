@@ -1,0 +1,44 @@
+{
+    "shows": [
+        {
+            "city": "New York City, NY",
+            "date": "May 02, 2024",
+            "venue": "The Bowery Ballroom",
+            "tm_code": "IAC0502",
+            "tm_question": "I am a citizen. I am an escapee. I am an _________",
+            "tm_answer": "exception"
+        },
+        {
+            "city": "Berlin, DE",
+            "date": "May 07, 2024",
+            "venue": "The Metropol",
+            "tm_code": "ONBM0705",
+            "tm_question": "In the first music video from Clancy, Josh wears this word, in Ukrainian, across his neck.",
+            "tm_answer": "torchbearer"
+        },
+        {
+            "city": "London, UK",
+            "date": "May 09, 2024",
+            "venue": "Electric Ballroom",
+            "tm_code": "RVTLN0905",
+            "tm_question": "Trash the Dragon, while seized by Keons, crashed the submarine in which body of water?",
+            "tm_answer": "paladin strait"
+        },
+        {
+            "city": "Mexico City, ME",
+            "date": "May 14, 2024",
+            "venue": "Lunario Del Auditorio",
+            "tm_code": "SO514AP",
+            "tm_question": "Raising these above your head was originally thought to be the only way to seize available vessels, something Clancy was gifted before leaving the island of Voldsøy.",
+            "tm_answer": "antlers"
+        },
+        {
+            "city": "Columbus, OH",
+            "date": "May 24, 2024",
+            "venue": "Newport Music Hall",
+            "tm_code": "5CL2AN4CY",
+            "tm_question": "The second stop of Tour De Columbus and the toy store where the band shot the music video for Choker can be both found on ____ Street in Columbus.",
+            "tm_answer": "high"
+        }
+    ]
+}

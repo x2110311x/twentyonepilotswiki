@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@fitnihil | tøp - dr</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100..800&display=swap" rel="stylesheet">
+
+    <script src="../../../assets/js/lib/tailwind.js"></script>
+
+    <style>
+        /* Modal styling */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            padding-top: 100px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.9);
+        }
+
+        .modal-content {
+            margin: auto;
+            display: block;
+            width: 80%;
+            max-width: 700px;
+        }
+
+        .modal-content, #caption {
+            animation-name: zoom;
+            animation-duration: 0.6s;
+        }
+
+        @keyframes zoom {
+            from {transform:scale(0)}
+            to {transform:scale(1)}
+        }
+
+        .close, .prev, .next {
+            position: absolute;
+            top: 50%;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            transition: 0.3s;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        .close {
+            top: 15px;
+            right: 35px;
+            font-size: 40px;
+        }
+
+        .close:hover,
+        .close:focus,
+        .prev:hover,
+        .prev:focus,
+        .next:hover,
+        .next:focus {
+            color: #bbb;
+        }
+
+        .prev {
+            left: 0;
+        }
+
+        .next {
+            right: 0;
+        }
+    </style>
+</head>
+
+<body class="bg-[#221f20] font-['Martian_Mono'] font-medium">
+
+    <div id="alert" class="w-full text-white bg-[#D62420] text-xs">
+        <div class="container flex items-center justify-between px-6 py-4 mx-auto">
+            <p class="mx-3">This site is not affiliated with Twenty One Pilots. This is a fan-made archive project. For
+                the official site, please click <a href="https://twentyonepilots.com" target="_blank"
+                    class="underline hover:text-gray-900 transition-colors">HERE</a></p>
+            <button id="close-alert"
+                class="p-2 transition-colors duration-300 transform rounded-md hover:bg-opacity-25 hover:bg-gray-900 focus:outline-none">
+                <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 18L18 6M6 6L18 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" />
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <div class="container mx-auto mt-10">
+        <h1 class="uppercase text-2xl md:text-4xl lg:text-4xl text-[#D62420] mb-4 pl-4 md=pl-0">Clancy: Digital Remains
+        </h1>
+        <p class="text-gray-500 pl-4 md=pl-0">Exclusive photographs, graphics and much more from the album Clancy.
+            Consider buying the album through the <a href="http://store.twentyonepilots.com">offical store</a> if you
+            enjoy this content. All credits go to Twenty One Pilots.</p>
+
+        <div id="gallery" class="mx-4 mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <!-- Images will be injected here -->
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <span class="prev pl-4">&#10094;</span>
+        <img class="modal-content" id="img01">
+        <span class="next pr-4">&#10095;</span>
+        <div id="caption"></div>
+        <button id="downloadImage" class="absolute bottom-4 right-16 bg-white text-black p-4">
+            Download Image
+        </button>
+    </div>
+
+    <footer class="text-gray-400 body-font">
+        <div class="container px-5 py-8 mx-auto flex items-center sm:flex-row flex-col">
+            <p class="text-sm text-gray-500 md:ml-0 md:pl-0 sm:ml-4 sm:pl-4 sm:py-2 sm:mt-0 mt-4">
+                THIS SITE IS NOT AFFILIATED WITH TWENTY ONE PILOTS - THIS IS A FAN PAGE — MADE BY
+                <a href="https://twitter.com/fitnihil" class="text-[#D62420] ml-1" rel="noopener noreferrer"
+                    target="_blank">@fitnihil</a>
+            </p>
+        </div>
+    </footer>
+
+    <script src="../../alert.js"></script>
+    <script src="./assets/script.js"></script>
+</body>
+
+</html>

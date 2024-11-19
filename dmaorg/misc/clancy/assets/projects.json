@@ -1,0 +1,14 @@
+{
+    "projects": [
+        {
+            "title": "An Evening With",
+            "desc": "Learn more about the 5 small shows done before the album release.",
+            "href": "./evening-with-top-data/"
+        },
+        {
+            "title": "Clancy: Digital Remains",
+            "desc": "Explore all 121 pages of exclusive Clancy art and visuals.",
+            "href": "./digital-remains/"
+        }
+    ]
+}
