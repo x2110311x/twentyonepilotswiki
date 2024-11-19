@@ -1,0 +1,32 @@
+{
+    "personal_info": {
+        "nickanme": "FIT",
+        "full_name": "fitnihil",
+        "origin": "BE - Belgium",
+
+        "language_options": [
+            {
+                "lg_1": "NL",
+                "lg_2": "EN",
+                "lg_3": "FR" 
+            }
+        ]
+    },
+
+    "social_info": {
+        "twitter": "twitter.com/fitnihil",
+        "youtube": "youtube.com/@fitnihil",
+        "instagram": "instagram.com/fit.nihil/"
+    },
+
+    "projects": [
+        {
+            "proj_name": "Evening With TØP Data",
+            "proj_url": "fitnihil.be/twenty-one-pilots/clancy/evening-with-top-data/"
+        },
+        {
+            "proj_name": "Clancy: Digital Remains",
+            "proj_url": "fitnihil.be/twenty-one-pilots/clancy/digital-remains/"
+        }
+    ]
+}
