@@ -70,9 +70,16 @@ module.exports = {
         {
           title: 'Docs',
           items: [
+{
+              label: 'Blurryface',
+              to: 'docs/blurryface',
+            },
             {
               label: 'Trench',
               to: 'docs/trench',
+            },
+            { label: 'Level of Concern',
+              to: 'docs/levelofconcern',
             },
             {
               label: 'Scaled and Icy',
@@ -81,6 +88,10 @@ module.exports = {
             {
               label: 'Clancy',
               to: 'docs/clancy',
+            },
+            {
+              label: 'Breach',
+              to: 'docs/breach',
             },
           ],
         },
