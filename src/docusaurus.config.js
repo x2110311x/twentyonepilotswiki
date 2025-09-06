@@ -23,9 +23,21 @@ module.exports = {
       },
       items: [
         {
+          to: 'docs/blurryface',
+          activeBasePath: 'docs',
+          label: 'Blurryface',
+          position: 'left',
+        },
+        {
           to: 'docs/trench',
           activeBasePath: 'docs',
           label: 'Trench',
+          position: 'left',
+        },
+                {
+          to: 'docs/levelofconcern',  
+          activeBasePath: 'docs',
+          label: 'Level of Concern',
           position: 'left',
         },
         {
@@ -40,6 +52,12 @@ module.exports = {
           label: 'Clancy',
           position: 'left',
         },
+                {
+          to: 'docs/breach/',  
+          activeBasePath: 'docs',
+          label: 'Breach',
+          position: 'left',
+        },
         {
           to: 'https://www.discordclique.com',
           label: 'Discord Clique',
@@ -52,9 +70,16 @@ module.exports = {
         {
           title: 'Docs',
           items: [
+{
+              label: 'Blurryface',
+              to: 'docs/blurryface',
+            },
             {
               label: 'Trench',
               to: 'docs/trench',
+            },
+            { label: 'Level of Concern',
+              to: 'docs/levelofconcern',
             },
             {
               label: 'Scaled and Icy',
@@ -63,6 +88,10 @@ module.exports = {
             {
               label: 'Clancy',
               to: 'docs/clancy',
+            },
+            {
+              label: 'Breach',
+              to: 'docs/breach',
             },
           ],
         },
@@ -78,8 +107,8 @@ module.exports = {
               href: 'https://www.discordclique.com',
             },
             {
-              label: 'Discord Clique on Twitter',
-              href: 'http://www.twitter.com/discordclique/',
+              label: 'Discord Clique on BlueSky',
+              href: 'https://bsky.app/profile/discordclique.bsky.social',
             }
           ],
         },
