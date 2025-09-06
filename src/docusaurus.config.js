@@ -23,9 +23,21 @@ module.exports = {
       },
       items: [
         {
+          to: 'docs/blurryface',
+          activeBasePath: 'docs',
+          label: 'Blurryface',
+          position: 'left',
+        },
+        {
           to: 'docs/trench',
           activeBasePath: 'docs',
           label: 'Trench',
+          position: 'left',
+        },
+                {
+          to: 'docs/levelofconcern',  
+          activeBasePath: 'docs',
+          label: 'Level of Concern',
           position: 'left',
         },
         {
@@ -38,6 +50,12 @@ module.exports = {
           to: 'docs/clancy',
           activeBasePath: 'docs',
           label: 'Clancy',
+          position: 'left',
+        },
+                {
+          to: 'docs/breach/',  
+          activeBasePath: 'docs',
+          label: 'Breach',
           position: 'left',
         },
         {
