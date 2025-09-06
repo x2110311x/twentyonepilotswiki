@@ -96,8 +96,8 @@ module.exports = {
               href: 'https://www.discordclique.com',
             },
             {
-              label: 'Discord Clique on Twitter',
-              href: 'http://www.twitter.com/discordclique/',
+              label: 'Discord Clique on BlueSky',
+              href: 'https://bsky.app/profile/discordclique.bsky.social',
             }
           ],
         },
