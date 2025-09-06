@@ -13,8 +13,6 @@
 [![GitHub contributors](https://img.shields.io/github/contributors/x2110311x/twentyonepilotswiki?style=for-the-badge)](https://github.com/x2110311x/twentyonepilotswiki/graphs/contributors)
 [![GitHub issues](https://img.shields.io/github/issues/x2110311x/twentyonepilotswiki?style=for-the-badge)](https://github.com/x2110311x/twentyonepilotswiki/issues)
 [![GitHub](https://img.shields.io/github/license/x2110311x/twentyonepilotswiki?style=for-the-badge)](https://github.com/x2110311x/twentyonepilotswiki/blob/main/LICENSE)
-[![Twitter Follow](https://img.shields.io/twitter/follow/discordclique?style=for-the-badge)](https://twitter.com/discordclique)
-
 
 <!-- PROJECT LOGO -->
 <br />
@@ -97,6 +95,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Discord Clique - [@DiscordClique](https://twitter.com/discordclique)
+Discord Clique - [@discordclique.bsky.social](https://bsky.app/profile/discordclique.bsky.social)
 
 Project Link - [https://github.com/x2110311x/twentyonepilotswiki](https://github.com/x2110311x/twentyonepilotswiki)
