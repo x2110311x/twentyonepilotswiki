@@ -104,136 +104,187 @@
       margin-bottom: 2.25rem;
     }
 
-    .timeline-group:last-child {
-      margin-bottom: 0;
-    }
+      .timeline-group:last-of-type {
+        margin-bottom: 0;
+      }
 
-    .era-label {
-      font-size: 0.75rem;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--text-muted);
-      margin: 0 0 0.75rem 0.25rem;
-    }
+      .era-label {
+        font-size: 0.75rem;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--text-muted);
+        margin: 0 0 0.75rem 0.25rem;
+      }
 
-    .timeline {
-      position: relative;
-      padding-left: 1.5rem;
-      border-left: 2px solid var(--timeline-line);
-      margin-left: 0.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.5rem;
-    }
-
-    .timeline-item {
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 0.75rem 1rem;
-      background-color: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      color: var(--text);
-      text-decoration: none;
-      transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
-    }
-
-    .timeline-item::before {
-      content: "";
-      position: absolute;
-      left: calc(-1.5rem - 6px);
-      top: 50%;
-      transform: translateY(-50%);
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background-color: var(--timeline-dot);
-      border: 2px solid var(--bg);
-      transition: background-color 0.15s ease, transform 0.15s ease;
-    }
-
-    .timeline-item:hover {
-      background-color: var(--surface-hover);
-      border-color: var(--border-hover);
-    }
-
-    .timeline-item:hover::before {
-      background-color: var(--accent);
-      transform: translateY(-50%) scale(1.2);
-    }
-
-    .item-title {
-      font-size: 0.95rem;
-      font-weight: 500;
-      color: var(--text);
-      transition: color 0.15s ease;
-    }
-
-    .timeline-item:hover .item-title {
-      color: var(--accent);
-    }
-
-    .item-meta {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      flex-shrink: 0;
-    }
-
-    .item-date {
-      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
-      font-size: 0.8rem;
-      color: var(--text-muted);
-      white-space: nowrap;
-    }
-
-    .item-arrow {
-      color: var(--text-muted);
-      font-size: 0.9rem;
-      opacity: 0.5;
-      transition: opacity 0.15s ease, transform 0.15s ease, color 0.15s ease;
-    }
-
-    .timeline-item:hover .item-arrow {
-      opacity: 1;
-      color: var(--accent);
-      transform: translateX(2px);
-    }
-
-    /* Footer */
-    .footer {
-      border-top: 1px solid var(--border);
-      background-color: var(--surface);
-      padding: 1.25rem;
-      text-align: center;
-      color: var(--text-muted);
-      font-size: 0.825rem;
-    }
-
-    .footer p {
-      margin: 0 auto;
-      max-width: 780px;
-    }
-
-    @media (max-width: 600px) {
-      .container {
-        padding: 2rem 1rem 3rem;
+      .timeline {
+        position: relative;
+        padding-left: 1.5rem;
+        border-left: 2px solid var(--timeline-line);
+        margin-left: 0.5rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
       }
 
       .timeline-item {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.25rem;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 0.75rem 1rem;
+        background-color: var(--surface);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        color: var(--text);
+        text-decoration: none;
+        transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+      }
+
+      .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: calc(-1.5rem - 6px);
+        top: 50%;
+        transform: translateY(-50%);
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: var(--timeline-dot);
+        border: 2px solid var(--bg);
+        transition: background-color 0.15s ease, transform 0.15s ease;
+      }
+
+      .timeline-item:hover {
+        background-color: var(--surface-hover);
+        border-color: var(--border-hover);
+      }
+
+      .timeline-item:hover::before {
+        background-color: var(--accent);
+        transform: translateY(-50%) scale(1.2);
+      }
+
+      .item-title {
+        font-size: 0.95rem;
+        font-weight: 500;
+        color: var(--text);
+        transition: color 0.15s ease;
+      }
+
+      .timeline-item:hover .item-title {
+        color: var(--accent);
+      }
+
+      .item-meta {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        flex-shrink: 0;
+      }
+
+      .item-date {
+        font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        white-space: nowrap;
       }
 
       .item-arrow {
-        display: none;
+        color: var(--text-muted);
+        font-size: 0.9rem;
+        opacity: 0.5;
+        transition: opacity 0.15s ease, transform 0.15s ease, color 0.15s ease;
       }
-    }
+
+      .timeline-item:hover .item-arrow,
+      .archive-card:hover .item-arrow {
+        opacity: 1;
+        color: var(--accent);
+        transform: translateX(2px);
+      }
+
+
+        /* Separate sections (Mailed Letters & Other Archives) */
+        .extra-sections {
+          margin-top: 2.75rem;
+          padding-top: 2rem;
+          border-top: 1px solid var(--border);
+          display: flex;
+          flex-direction: column;
+          gap: 2rem;
+        }
+
+        .archive-list {
+          display: flex;
+          flex-direction: column;
+          gap: 0.5rem;
+        }
+
+        .archive-card {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: 1rem;
+          padding: 0.75rem 1rem;
+          background-color: var(--surface);
+          border: 1px solid var(--border);
+          border-radius: 8px;
+          color: var(--text);
+          text-decoration: none;
+          transition: background-color 0.15s ease, border-color 0.15s ease;
+        }
+
+        .archive-card:hover {
+          background-color: var(--surface-hover);
+          border-color: var(--border-hover);
+        }
+
+        .archive-card:hover .item-title {
+          color: var(--accent);
+        }
+
+        /* Footer */
+        .footer {
+          border-top: 1px solid var(--border);
+          background-color: var(--surface);
+          padding: 1.25rem;
+          text-align: center;
+          color: var(--text-muted);
+          font-size: 0.825rem;
+        }
+
+        .footer p {
+          margin: 0 auto;
+          max-width: 780px;
+        }
+
+        .footer a {
+          color: var(--accent);
+          text-decoration: none;
+        }
+
+        .footer a:hover {
+          text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+          .container {
+            padding: 2rem 1rem 3rem;
+          }
+
+          .timeline-item,
+          .archive-card {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 0.25rem;
+          }
+
+          .item-arrow {
+            display: none;
+          }
+        }
   </style>
 </head>
 
@@ -380,13 +431,6 @@
     <section class="timeline-group">
       <h2 class="era-label">2024</h2>
       <div class="timeline">
-        <a href="physical_letter/" class="timeline-item">
-          <span class="item-title">Physical mailed journal</span>
-          <span class="item-meta">
-            <span class="item-date">February 15th, 2024</span>
-            <span class="item-arrow">&rarr;</span>
-          </span>
-        </a>
         <a href="022824-1/found/15398642_14/clancy.html" class="timeline-item">
           <span class="item-title">Added copy of physical journal</span>
           <span class="item-meta">
@@ -425,23 +469,45 @@
       </div>
     </section>
 
-    <section class="timeline-group">
-      <h2 class="era-label">2025</h2>
-      <div class="timeline">
-        <a href="physical_letter_2025/" class="timeline-item">
-          <span class="item-title">Physical mailed investigative summary</span>
-          <span class="item-meta">
-            <span class="item-date">August 14th, 2025</span>
-            <span class="item-arrow">&rarr;</span>
-          </span>
-        </a>
-      </div>
-    </section>
+    <div class="extra-sections">
+      <section>
+        <h2 class="era-label">Mailed Letters</h2>
+        <div class="archive-list">
+          <a href="physical_letter/" class="archive-card">
+            <span class="item-title">Physical mailed journal</span>
+            <span class="item-meta">
+              <span class="item-date">February 15th, 2024</span>
+              <span class="item-arrow">&rarr;</span>
+            </span>
+          </a>
+          <a href="physical_letter_2025/" class="archive-card">
+            <span class="item-title">Physical mailed investigative summary</span>
+            <span class="item-meta">
+              <span class="item-date">August 14th, 2025</span>
+              <span class="item-arrow">&rarr;</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="era-label">Other Archives</h2>
+        <div class="archive-list">
+          <a href="misc/clancy/digital-remains/" class="archive-card">
+            <span class="item-title">Clancy: Digital Remains</span>
+            <span class="item-meta">
+              <span class="item-date">May 29th, 2024</span>
+              <span class="item-arrow">&rarr;</span>
+            </span>
+          </a>
+        </div>
+      </section>
+    </div>
   </main>
 
   <footer class="footer">
     <p>This site is NOT owned or officially affiliated with twenty one pilots. It is a fan run page owned and operated
-      by Discord Clique.</p>
+      by <a href="https://www.discordclique.com"> Discord Clique.</a></p>
   </footer>
 </body>
 
