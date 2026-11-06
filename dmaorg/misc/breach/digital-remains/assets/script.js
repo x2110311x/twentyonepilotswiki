@@ -45,7 +45,7 @@
         const captionText = document.getElementById('caption');
         const downloadButton = document.getElementById('downloadImage');
 
-        modal.style.display = "block";
+        modal.style.display = "flex";
         modalImg.src = photos[currentIndex].url;
         captionText.innerHTML = `Page ${photos[currentIndex].index}`;
         downloadButton.href = "#"; // reset href since we handle download manually
