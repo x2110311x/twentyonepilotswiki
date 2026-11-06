@@ -1,82 +1,448 @@
-
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>dmaorg archive</title>
-    <style>
-      html {
-        position: relative;
-        min-height: 100%;
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>dmaorg archive</title>
+  <style>
+    :root {
+      --bg: #0e1116;
+      --surface: #161b22;
+      --surface-hover: #1c232d;
+      --border: #262e3a;
+      --border-hover: #3b4658;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --accent: #79c0ff;
+      --accent-subtle: rgba(121, 192, 255, 0.12);
+      --timeline-line: #262e3a;
+      --timeline-dot: #485466;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+    }
+
+
+    .container {
+      width: 100%;
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 3rem 1.25rem 4rem;
+      flex: 1;
+    }
+
+    /* Header */
+    .page-header {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding-bottom: 1.75rem;
+      margin-bottom: 2.25rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .page-title {
+      margin: 0;
+      font-size: 1.85rem;
+      font-weight: 600;
+      letter-spacing: -0.02em;
+      color: var(--text);
+    }
+
+    .header-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.45rem 0.85rem;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text);
+      font-size: 0.875rem;
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      text-decoration: none;
+      transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+    }
+
+    .header-link:hover {
+      background-color: var(--surface-hover);
+      border-color: var(--border-hover);
+      color: var(--accent);
+    }
+
+    .status-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background-color: #f85149;
+      display: inline-block;
+    }
+
+    /* Timeline */
+    .timeline-group {
+      margin-bottom: 2.25rem;
+    }
+
+    .timeline-group:last-child {
+      margin-bottom: 0;
+    }
+
+    .era-label {
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--text-muted);
+      margin: 0 0 0.75rem 0.25rem;
+    }
+
+    .timeline {
+      position: relative;
+      padding-left: 1.5rem;
+      border-left: 2px solid var(--timeline-line);
+      margin-left: 0.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .timeline-item {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.75rem 1rem;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      text-decoration: none;
+      transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .timeline-item::before {
+      content: "";
+      position: absolute;
+      left: calc(-1.5rem - 6px);
+      top: 50%;
+      transform: translateY(-50%);
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--timeline-dot);
+      border: 2px solid var(--bg);
+      transition: background-color 0.15s ease, transform 0.15s ease;
+    }
+
+    .timeline-item:hover {
+      background-color: var(--surface-hover);
+      border-color: var(--border-hover);
+    }
+
+    .timeline-item:hover::before {
+      background-color: var(--accent);
+      transform: translateY(-50%) scale(1.2);
+    }
+
+    .item-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text);
+      transition: color 0.15s ease;
+    }
+
+    .timeline-item:hover .item-title {
+      color: var(--accent);
+    }
+
+    .item-meta {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+      flex-shrink: 0;
+    }
+
+    .item-date {
+      font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .item-arrow {
+      color: var(--text-muted);
+      font-size: 0.9rem;
+      opacity: 0.5;
+      transition: opacity 0.15s ease, transform 0.15s ease, color 0.15s ease;
+    }
+
+    .timeline-item:hover .item-arrow {
+      opacity: 1;
+      color: var(--accent);
+      transform: translateX(2px);
+    }
+
+    /* Footer */
+    .footer {
+      border-top: 1px solid var(--border);
+      background-color: var(--surface);
+      padding: 1.25rem;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.825rem;
+    }
+
+    .footer p {
+      margin: 0 auto;
+      max-width: 780px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 2rem 1rem 3rem;
       }
-      body {
-        /* Margin bottom by footer height */
-        margin-bottom: 60px;
-      }
-      .footerfix{height:4rem;}  
-      .footer {
-        bottom: 0;
-        width: 100%;
-        position: fixed;
-        /* Set the fixed height of the footer here */
-        height: 30px;
-        background-color: #f5f5f5;
-        margin-top: 1em;
+
+      .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.25rem;
       }
 
-    </style>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  </head>
+      .item-arrow {
+        display: none;
+      }
+    }
+  </style>
+</head>
 
-  <body>
+<body>
+  <main role="main" class="container">
+    <header class="page-header">
+      <h1 class="page-title">dmaorg archive</h1>
+      <a href="dmaorg404.html" class="header-link">
+        <span class="status-dot"></span>
+        dmaorg 404 page
+      </a>
+    </header>
 
-    <!-- Begin page content -->
-    <main role="main" class="container">
-        <h1>dmaorg archive</h1><hr>
-        <a href='dmaorg404.html'>404 page</a>
-        <hr>
-        <a href='original/found/15398642_14/clancy.html'> Original Files - April 20th, 2018</a><br>
-        <a href='050918/found/15398642_14/clancy.html'> Second journal added - May 9th, 2018</a><br>
-        <a href='053118/found/15398642_14/clancy.html'> Cheetah gif added - May 31st, 2018</a><br>
-        <a href='062918/found/15398642_14/clancy.html'> Banditos picture added / New violation code found - June 29th, 2018</a><br>
-        <a href='070118/found/15398642_14/clancy.html'> Third journal added / “We are banditos” update - July 1st, 2018</a><br>
-        <a href='070518/found/15398642_14/clancy.html'> Black journal added - July 5th, 2018</a><br>
-        <a href='070618/found/15398642_14/clancy.html'> Torch gif added - July 6th, 2018</a><br>
-        <a href='070818/found/15398642_14/clancy.html'> First handwritten note added - July 8th, 2018</a><br>
-        <a href='071818/found/15398642_14/clancy.html'> Second handwritten note added - July 18th, 2018</a><br>
-        <a href='012219/found/15398642_14/clancy.html'> Fourth Journal added - January 22nd, 2019</a><br>
-        <hr>
-        <a href='terminating/found/15398642_14/clancy.html'> Terminating Files - April 2nd, 2021</a><br>
-        <a href='terminated/found/15398642_14/clancy.html'> Account Terminated - April 5th, 2021</a><br>
-        <hr>
-        <a href='031622/found/15398642_14/clancy.html'> Website Unterminated / Trench Map Added - March 16th, 2022</a><br>
-        <a href='031722/found/15398642_14/clancy.html'> Third handwritten note added - March 17th, 2022</a><br>
-        <a href='031822-1/found/15398642_14/clancy.html'> Weapon diagram added - March 18th, 2022 Update 1</a><br>
-        <a href='031822-2/found/15398642_14/clancy.html'> Fourth handwritten note added - March 18th, 2022 Update 2</a><br>
-        <hr>
-        <a href='physical_letter/'> Physical mailed journal - February 15th, 2024</a><br>
-        <a href='022824-1/found/15398642_14/clancy.html'> Added copy of physical journal - February 28th, 2024 Update 1</a><br>
-        <a href='022824-2/found/15398642_14/clancy.html'> Changed date on new journal - February 28th, 2024 Update 2</a><br>
-        <a href='022824-3/found/15398642_14/clancy.html'> Moved journal to top - February 28th, 2024 Update 3</a><br>
-        <a href='022824-4/found/15398642_14/clancy.html'> New typed journal - February 28th, 2024 Update 4</a><br>
-        <a href='022824-5/found/15398642_14/clancy.html'> Another new typed journal - February 28th, 2024 Update 5</a><br>
-        <hr>
-        <a href='physical_letter_2025/'> Physical mailed investigative summary - August 14th, 2025</a><br>
-
-
-
-
-    </main>
-    <div class="footerfix"></div>
-    <footer class="footer">
-      <div class="container">
-        <p> This site is NOT owned or officially affiliated with twenty one pilots. It is a fan run page owned and operated by Discord Clique.</p>
+    <section class="timeline-group">
+      <h2 class="era-label">2018 &ndash; 2019</h2>
+      <div class="timeline">
+        <a href="original/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Original Files</span>
+          <span class="item-meta">
+            <span class="item-date">April 20th, 2018</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="050918/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Second journal added</span>
+          <span class="item-meta">
+            <span class="item-date">May 9th, 2018</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="053118/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Cheetah gif added</span>
+          <span class="item-meta">
+            <span class="item-date">May 31st, 2018</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="062918/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Banditos picture added / New violation code found</span>
+          <span class="item-meta">
+            <span class="item-date">June 29th, 2018</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="070118/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Third journal added / “We are banditos” update</span>
+          <span class="item-meta">
+            <span class="item-date">July 1st, 2018</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="070518/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Black journal added</span>
+          <span class="item-meta">
+            <span class="item-date">July 5th, 2018</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="070618/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Torch gif added</span>
+          <span class="item-meta">
+            <span class="item-date">July 6th, 2018</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="070818/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">First handwritten note added</span>
+          <span class="item-meta">
+            <span class="item-date">July 8th, 2018</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="071818/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Second handwritten note added</span>
+          <span class="item-meta">
+            <span class="item-date">July 18th, 2018</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="012219/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Fourth Journal added</span>
+          <span class="item-meta">
+            <span class="item-date">January 22nd, 2019</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
       </div>
-    </footer>
+    </section>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  </body>
+    <section class="timeline-group">
+      <h2 class="era-label">2021</h2>
+      <div class="timeline">
+        <a href="terminating/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Terminating Files</span>
+          <span class="item-meta">
+            <span class="item-date">April 2nd, 2021</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="terminated/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Account Terminated</span>
+          <span class="item-meta">
+            <span class="item-date">April 5th, 2021</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="timeline-group">
+      <h2 class="era-label">2022</h2>
+      <div class="timeline">
+        <a href="031622/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Website Unterminated / Trench Map Added</span>
+          <span class="item-meta">
+            <span class="item-date">March 16th, 2022</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="031722/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Third handwritten note added</span>
+          <span class="item-meta">
+            <span class="item-date">March 17th, 2022</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="031822-1/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Weapon diagram added</span>
+          <span class="item-meta">
+            <span class="item-date">March 18th, 2022 &middot; Update 1</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="031822-2/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Fourth handwritten note added</span>
+          <span class="item-meta">
+            <span class="item-date">March 18th, 2022 &middot; Update 2</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="timeline-group">
+      <h2 class="era-label">2024</h2>
+      <div class="timeline">
+        <a href="physical_letter/" class="timeline-item">
+          <span class="item-title">Physical mailed journal</span>
+          <span class="item-meta">
+            <span class="item-date">February 15th, 2024</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="022824-1/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Added copy of physical journal</span>
+          <span class="item-meta">
+            <span class="item-date">February 28th, 2024 &middot; Update 1</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="022824-2/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Changed date on new journal</span>
+          <span class="item-meta">
+            <span class="item-date">February 28th, 2024 &middot; Update 2</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="022824-3/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Moved journal to top</span>
+          <span class="item-meta">
+            <span class="item-date">February 28th, 2024 &middot; Update 3</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="022824-4/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">New typed journal</span>
+          <span class="item-meta">
+            <span class="item-date">February 28th, 2024 &middot; Update 4</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+        <a href="022824-5/found/15398642_14/clancy.html" class="timeline-item">
+          <span class="item-title">Another new typed journal</span>
+          <span class="item-meta">
+            <span class="item-date">February 28th, 2024 &middot; Update 5</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+      </div>
+    </section>
+
+    <section class="timeline-group">
+      <h2 class="era-label">2025</h2>
+      <div class="timeline">
+        <a href="physical_letter_2025/" class="timeline-item">
+          <span class="item-title">Physical mailed investigative summary</span>
+          <span class="item-meta">
+            <span class="item-date">August 14th, 2025</span>
+            <span class="item-arrow">&rarr;</span>
+          </span>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>This site is NOT owned or officially affiliated with twenty one pilots. It is a fan run page owned and operated
+      by Discord Clique.</p>
+  </footer>
+</body>
+
 </html>

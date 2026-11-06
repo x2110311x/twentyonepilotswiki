@@ -1,34 +1,134 @@
-<html>
-    <head>
-        <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
-        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
-        <style>
-            body { background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABoAAAAaCAYAAACpSkzOAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABZ0RVh0Q3JlYXRpb24gVGltZQAxMC8yOS8xMiKqq3kAAAAcdEVYdFNvZnR3YXJlAEFkb2JlIEZpcmV3b3JrcyBDUzVxteM2AAABHklEQVRIib2Vyw6EIAxFW5idr///Qx9sfG3pLEyJ3tAwi5EmBqRo7vHawiEEERHS6x7MTMxMVv6+z3tPMUYSkfTM/R0fEaG2bbMv+Gc4nZzn+dN4HAcREa3r+hi3bcuu68jLskhVIlW073tWaYlQ9+F9IpqmSfq+fwskhdO/AwmUTJXrOuaRQNeRkOd5lq7rXmS5InmERKoER/QMvUAPlZDHcZRhGN4CSeGY+aHMqgcks5RrHv/eeh455x5KrMq2yHQdibDO6ncG/KZWL7M8xDyS1/MIO0NJqdULLS81X6/X6aR0nqBSJcPeZnlZrzN477NKURn2Nus8sjzmEII0TfMiyxUuxphVWjpJkbx0btUnshRihVv70Bv8ItXq6Asoi/ZiCbU6YgAAAABJRU5ErkJggg==);}
-            .error-template {padding: 40px 15px;text-align: center;}
-            .error-actions {margin-top:15px;margin-bottom:15px;}
-            .error-actions .btn { margin-right:10px; }
-        </style>
-    </head> 
-    <body>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="error-template">
-                        <h1>
-                            Oops!</h1>
-                        <h2>
-                            404 Not Found</h2>
-                        <div class="error-details">
-                            The requested page does not exist.
-                        </div>
-                        <div class="error-actions">
-                            <a href="https://www.dmaorg.site" class="btn btn-primary btn-lg"><span class="glyphicon glyphicon-home"></span>
-                                Take Me Home </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>404 Not Found - dmaorg archive</title>
+    <style>
+        :root {
+            --bg: #0e1116;
+            --surface: #161b22;
+            --surface-hover: #1c232d;
+            --border: #262e3a;
+            --border-hover: #3b4658;
+            --text: #e6edf3;
+            --text-muted: #8b949e;
+            --accent: #79c0ff;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.5;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1.5rem;
+        }
+
+        .error-card {
+            width: 100%;
+            max-width: 440px;
+            background-color: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 2.5rem 2rem;
+            text-align: center;
+        }
+
+        .error-code {
+            display: inline-block;
+            font-family: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--accent);
+            background-color: rgba(121, 192, 255, 0.1);
+            border: 1px solid rgba(121, 192, 255, 0.25);
+            padding: 0.25rem 0.75rem;
+            border-radius: 999px;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            margin: 0 0 0.5rem;
+            font-size: 1.75rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+
+        .error-details {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin: 0 0 1.75rem;
+        }
+
+        .error-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.75rem;
+            justify-content: center;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.4rem;
+            padding: 0.6rem 1.15rem;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            text-decoration: none;
+            transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+        }
+
+        .btn-primary {
+            background-color: #238636;
+            border: 1px solid rgba(240, 246, 252, 0.1);
+            color: #ffffff;
+        }
+
+        .btn-primary:hover {
+            background-color: #2ea043;
+        }
+
+        .btn-secondary {
+            background-color: transparent;
+            border: 1px solid var(--border);
+            color: var(--text);
+        }
+
+        .btn-secondary:hover {
+            background-color: var(--surface-hover);
+            border-color: var(--border-hover);
+            color: var(--accent);
+        }
+    </style>
+</head>
+
+<body>
+    <main class="error-card">
+        <div class="error-code">404</div>
+        <h1>Page Not Found</h1>
+        <p class="error-details">The requested page does not exist.</p>
+        <div class="error-actions">
+            <a href="https://www.dmaorg.site" class="btn btn-primary">Take Me Home</a>
         </div>
-    </body>
+    </main>
+</body>
+
 </html>
